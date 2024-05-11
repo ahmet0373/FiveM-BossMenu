@@ -511,24 +511,119 @@ main .box-mitte .rechtstitle{
 
 
 main .box-mitte .links{
+    display: grid;
+    gap: 15px;
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     height: 430px;
     width: 49%;
+    overflow-y: auto;
+    
+}
+
+
+main .box-mitte .links::-webkit-scrollbar {
+    width: 2px;
+}
+
+main .box-mitte .links::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+main .box-mitte .links::-webkit-scrollbar-button:start,
+main .box-mitte .links::-webkit-scrollbar-button:end {
+    display: block;
+    height: 10px; /* Höhe der Grenze */
+}
+
+main .box-mitte .links::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+
+main .box-mitte .einheit{
+    display: grid;
+    gap: 15px;
+    background: var(--color-white);
+    padding: 1.5rem;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
     
 }
 
 
 main .box-mitte .rechts{
+    display: grid;
+    gap: 15px;
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     height: 430px;
     width: 49%;
+    overflow-y: auto;
     
+}
+
+main .box-mitte .rechts::-webkit-scrollbar {
+    width: 2px;
+}
+
+main .box-mitte .techts::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+main .box-mitte .rechts::-webkit-scrollbar-button:start,
+main .box-mitte .rechts::-webkit-scrollbar-button:end {
+    display: block;
+    height: 10px; /* Höhe der Grenze */
+}
+
+main .box-mitte .rechts::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+main .box-mitte .anruf .first{
+    display: flex;
+    justify-content: space-between;
+}
+main .box-mitte .anruf{
+    display: grid;
+    gap: 15px;
+    background: var(--color-white);
+    padding: 1.5rem;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    
+}
+
+main .box-mitte .anruf button{
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 5px 15px;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 8px;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+
+
+main .box-mitte .anruf button:hover {
+    transition : 613ms;
+    padding: 5px 15px;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
 }
 
 /************************MAIN ENDE*********************************/

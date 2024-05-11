@@ -12,94 +12,125 @@
 var spieler = [
     
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "unemployed",
-            "wl" : "0"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         },
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "Diaz Cartel",
-            "wl" : "1"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         },
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "Diaz Cartel",
-            "wl" : "1"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         },
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "Diaz Cartel",
-            "wl" : "1"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         },
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "Diaz Cartel",
-            "wl" : "1"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         },
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "Diaz Cartel",
-            "wl" : "1"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         },
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "unemployed",
-            "wl" : "0"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         },
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "unemployed",
-            "wl" : "0"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         },
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "Diaz Cartel",
-            "wl" : "1"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         },
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "Diaz Cartel",
-            "wl" : "1"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         },
         {
-            "name" : "Miha Nowotny",
-            "online_zeit" : "12h 40min",
-            "id" : "342",
-            "discord_id" : "346521",
-            "job" : "unemployed",
-            "wl" : "0"
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
+        },
+        {
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
+        },
+        {
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
+        },
+        {
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
+        },
+        {
+            "vorname" : "Miha",
+            "nachname" : "Nowotny",
+            "geburtsdatum" : "17/10/2003",
+            "geschlecht" : "M",
+            "fahndung" : "Stufe 4",
+            "id" : "31"
         }
-    
 ]
 
 var autos = [
@@ -1008,10 +1039,29 @@ function fillcon2_left_dash() {
 
             <div class="linksrechts">
                 <div class="links">
-
-                  
+                    <ul class="einheiten">
+                        <li class="einheit">
+                            <p><b>Einheit:</b> Miha Nowotny</p>
+                            <p><b>Abteilung:</b> LSPD</p>
+                            <p><b>Status:</b> Am Berufungsort</p>
+                        </li>
+                    </ul>               
                 </div>
                 <div class="rechts">
+                    <ul class="anrufe">
+                        <li class="anruf">
+                            <div class="first">
+                                <p><b class="danger">Dispatch:</b> 0001</p>
+                                <small class="text-muted">vor 15 Sekunden</small>
+                            </div>
+                            <p><b>Anrufer:</b> Miha Nowotny</p>
+                            <p><b>Ort:</b> LSPD</p>
+                            <p><b>Beschreibung:</b> Brauche Hilfe</p>
+                            <p><b>Antwortende EInheiten:</b> Streife 002, Streife 002, Streife 002, Streife 002, Streife 002</p> 
+                            <button>An Anruf anhängen</button>  
+                        </li>
+                    </ul>
+
                 
                 </div>
             </div>
@@ -1019,149 +1069,11 @@ function fillcon2_left_dash() {
             
         </div>
     `)
-
-let toolbar = document.createElement('div');
-toolbar.innerHTML = '<h2>Tickets</h2>';
-
-let TableTicket = $('#ticketsTable').DataTable({
-    pageLength: 7, 
-    lengthChange: false,
-    language: sprache,
-    layout: {
-        topStart: toolbar
-    },
-    data : tickets,
-    'columns' : [
-        {data : 'id'},
-        {data : 'name'},
-        {data : 'ticket_id'},
-        {data : 'zeit'},
-        {data : 'kategorie'},
-        {data : 'status'},
-        {data : 'id'}
-    ],
-    columnDefs: [
-        
-        {
-            title: 'id',
-            targets: 0
-        },
-        {
-            title: 'name',
-            targets: 1
-        },
-        {
-            title: 'ticket id',
-            targets: 2
-        },
-        {
-            title: 'zeit',
-            targets: 3
-        },
-        {
-            title: 'kategorie',
-            targets: 4,
-        },
-        {
-            title: 'status',
-            targets: 5,
-        },
-        {
-            title: '',
-            targets: 6,
-            sortable: false
-        }
-    ]
-});
-
-TableTicket.on("draw", function() {
-    if (TableTicket.column(6).nodes()) {
-        TableTicket.column(6).nodes().each(function(cell, i) {
-            var taskid = $(cell).text().trim();
-            $(cell).html(`
-            
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16" onclick="modal_tickets('${taskid}')">
-                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
-                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
-                </svg>
-            
-            `);
-        });    
-    }    
-       
-})
-
-TableTicket.draw();
-
-
-
 }
 
 function fillcon2_left_list() {
     $('#con2_left').html(`
-    <div class="mitte-oben">
-        <div id="list" class="box1" onclick="button1('list')" href="#">      
-            <span class="material-icons-sharp">groups</span>
-            <div class="middle">
-                <div class="lef">
-                    <h3>Spieler</h3>
-                    <h1>434</h1>
-                </div>
-                <div class="progress">
-                    <svg>
-                        <circle cx="38" cy="38" r="36"></circle>
-                    </svg>
-                    <div class="number">
-                        <p>51%</p>
-                    </div>
-                </div>
-            </div>
-            <small class="text-muted">Aktuell</small>
-        </div>
-<!-------------------------Ende erste block---------------------------->
-        <div id="auto" class="box2" onclick="button1('autos')" href="#">
-            <span class="material-icons-sharp">directions_car</span>
-            <div class="middle">
-                <div class="lef">
-                    <h3>Fahrzeuge</h3>
-                    <h1>234</h1>
-                </div>
-                <div class="progress">
-                    <svg>
-                        <circle cx="38" cy="38" r="36"></circle>
-                    </svg>
-                    <div class="number">
-                        <p>51%</p>
-                    </div>
-                </div>
-            </div>
-            <small class="text-muted">Aktuell</small>
-        </div>
-        <!-------------------------Ende zweite block---------------------------->
-        <div id="ticket" class="box3" onclick="button1('tickets')" href="#">
-            <span class="material-icons-sharp">analytics</span>
-            <div class="middle">
-                <div class="lef">
-                    <h3>Tickets</h3>
-                    <div class="zahl">
-                        <h1 id="stream" class="off">34</h1>
-                        <span class="message-count">34</span>
-                    </div>
-                </div>
-                <div class="progress">
-                    <svg>
-                        <circle cx="38" cy="38" r="36"></circle>
-                    </svg>
-                    <div class="number">
-                        <p>71%</p>
-                    </div>
-                </div>
-            </div>
-            <small class="text-muted">Aktuell</small>
-        </div>
-        <!-------------------------Ende dritter block---------------------------->
-    </div>
-
+    
     <!-------------------------Ende insight---------------------------->
     <div class="box-mitte">
         
@@ -1176,8 +1088,8 @@ function fillcon2_left_list() {
 let toolbar = document.createElement('div');
 toolbar.innerHTML = '<h2>Spieler Liste</h2>';
 
-let Table = $('#spielerTable').DataTable({
-    pageLength: 7, 
+let TableSpieler = $('#spielerTable').DataTable({
+    pageLength: 11, 
     lengthChange: false,
     language: sprache,
     layout: {
@@ -1185,78 +1097,50 @@ let Table = $('#spielerTable').DataTable({
     },
     data : spieler,
     'columns' : [
-        {data : 'id'},
-        {data : 'name'},
-        {data : 'online_zeit'},
-        {data : 'discord_id'},
-        {data : 'job'},
-        {data : 'wl'},
+        {data : 'vorname'},
+        {data : 'nachname'},
+        {data : 'geburtsdatum'},
+        {data : 'geschlecht'},
+        {data : 'fahndung'},
         {data : 'id'}
     ],
     columnDefs: [
         
         {
-            title: 'ID',
+            title: 'Vorname',
             targets: 0
         },
         {
-            title: 'Name',
+            title: 'Nachname',
             targets: 1
         },
         {
-            title: 'Online Zeit',
+            title: 'Geburtsdatum',
             targets: 2
         },
         {
-            title: 'Discord ID',
+            title: 'Geschlecht',
             targets: 3
         },
         {
-            title: 'Job',
+            title: 'Fahndung',
             targets: 4
         },
         {
-            title: 'WL',
-            targets: 5
-        },
-        {
             title: '',
-            targets: 6,
+            targets: 5,
             sortable: false
         }
     ]
 });
 
-Table.on("draw", function() {
-    if (Table.column(5).nodes()) {
-        Table.column(5).nodes().each(function(cell, i) {
-            var taskid = $(cell).text().trim();
-            if(taskid == "1"){
-                $(cell).html(`
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
-                    </svg>
-                `);
-            } else if (taskid == "0") {
-                $(cell).html(`
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                    </svg>
-                `);
-            }
-            
-        });    
-    }    
-       
-})
-
-Table.on("draw", function() {
-    if (Table.column(6).nodes()) {
-        Table.column(6).nodes().each(function(cell, i) {
+TableSpieler.on("draw", function() {
+    if (TableSpieler.column(5).nodes()) {
+        TableSpieler.column(5).nodes().each(function(cell, i) {
             var taskid = $(cell).text().trim();
             $(cell).html(`
             
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16" onclick="modal_spieler(${taskid})">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16" onclick="modal_tickets('${taskid}')">
                   <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
                   <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
                 </svg>
@@ -1267,7 +1151,7 @@ Table.on("draw", function() {
        
 })
 
-Table.draw();
+TableSpieler.draw();
 
 }
 function fillcon2_left_ticket() {
