@@ -81,6 +81,7 @@ body {
 
 #main_hud {
     width: 1150px;
+    height: 720px;
     background-color: var(--color-background);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -626,7 +627,85 @@ main .box-mitte .anruf button:hover {
     border: solid 2px var(--color-success);
 }
 
-/************************MAIN ENDE*********************************/
+/************************Akte*********************************/
+main .mitte-oben .box1-akte {
+    display: flex;
+    width: 50%;
+    gap: 20px;
+}
+
+main .mitte-oben .box1-akte span{
+   
+    position: absolute;
+    top: 110px;
+    left: 595px;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    color: var(--color-dark);
+    cursor: pointer;
+    
+    
+}
+
+main .mitte-oben .box1-akte .middle img{
+    width: 128px;
+    height: 128px;
+}
+main .mitte-oben .box1-akte .akte-info{
+    display: grid;
+    gap: 10px;
+}
+main .box-mitte-akte{
+    display: grid;
+}
+
+main .box-mitte-akte .linksrechts{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+main .box-mitte-akte .links{
+    display: grid;
+    gap: 5px;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    width: 25%;
+}
+
+main .box-mitte-akte .mitte{
+    display: grid;
+    gap: 5px;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    width: 40%;
+}
+main .box-mitte-akte .rechts{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    width: 40%;
+    
+}
+
+main .box-mitte-akte .unten{
+    margin-top: 20px;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    width: 100%;
+    
+}
+
+
+
+
+
+
+/*--------------------------akte ende--------------------------*/
 
 .right{
     width: 30%;

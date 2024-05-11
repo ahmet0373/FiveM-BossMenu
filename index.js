@@ -1089,7 +1089,7 @@ let toolbar = document.createElement('div');
 toolbar.innerHTML = '<h2>Spieler Liste</h2>';
 
 let TableSpieler = $('#spielerTable').DataTable({
-    pageLength: 11, 
+    pageLength: 12, 
     lengthChange: false,
     language: sprache,
     layout: {
@@ -1139,12 +1139,9 @@ TableSpieler.on("draw", function() {
         TableSpieler.column(5).nodes().each(function(cell, i) {
             var taskid = $(cell).text().trim();
             $(cell).html(`
-            
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16" onclick="modal_tickets('${taskid}')">
-                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
-                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
-                </svg>
-            
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16" onclick="button6('akte')">
+                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+                </svg>        
             `);
         });    
     }    
@@ -1545,7 +1542,92 @@ themeToggler.addEventListener('click', () => {
 })
 
 }
+// akte
 
+
+function fillcon2_akte() {
+    $('#con2_left').html(`
+        <div class="mitte-oben">
+            <div id="list" class="box1-akte">      
+                <span class="back material-icons-sharp">arrow_back_ios</span>
+                <div class="middle">
+                
+                    <img src="./images/user.png">
+                    
+
+                    
+                </div>
+                <div class="akte-info">
+                    <p><b>Name:</b> Miha Nowotny</p>
+                    <p><b>Geburtsdatum:</b> 17/10/2000</p>
+                    <p><b>Geschlecht:</b> Männlich</p>
+                    <p><b>Job:</b> PD Chief</p>
+                </div>
+                
+                
+            </div>
+            <!-------------------------Ende erste block---------------------------->
+            <div id="auto" class="box2" onclick="button1('autos')" href="#">
+                
+                <div class="middle">
+                    <span class="material-icons-sharp">manage_accounts</span>
+                    <h2>Aktionen</2> 
+
+                    
+                </div>
+                <div class="pop-mod-button">
+                    <button>Fahrzeuge anzeigen</button>
+                    <button>Waffen anzeigen</button>     
+                </div>
+                <div class="pop-mod-button">
+                    <button>Fahndung erstellen</button>
+                    <button>Bericht erstellen</button>     
+                </div>
+            </div>
+            <!-------------------------Ende zweite block---------------------------->
+            
+        </div>
+
+        <!-------------------------Ende insight---------------------------->
+        <div class="box-mitte-akte">
+            
+
+            <div class="linksrechts">
+                <div class="links">
+                    <p><b>Typ:</b> Ausweis</p>
+                    <p><b>Status:</b> auswählen</p>
+                    <p><b>Ausgestellt:</b> 11/05/2024</p>
+                    <p><b>Läuft ab:</b> 11/05/2024</p>               
+                </div>
+
+                <div class="mitte">
+                    
+
+                
+                </div>
+                <div class="rechts">
+                    
+
+                
+                </div>
+            </div>
+            <div class="unten">
+
+            </div>
+
+            
+        </div>
+    `)
+
+
+    $('.back').click(function() {
+        fillcon2_left_list()
+        $('#con2_right').css("display","none")
+    });
+
+
+
+}
 // nav buttons
 function button1(type) {
 
@@ -1569,6 +1651,13 @@ function button1(type) {
         $('#con2_right').css("display","none")
         $('.menuselect').removeClass('active');
         $('#waffe').addClass('active');
+    }
+}
+
+function button6(type){
+    if (type == "akte"){
+        fillcon2_akte()
+        $('#con2_right').css("display","none")
     }
 }
 
