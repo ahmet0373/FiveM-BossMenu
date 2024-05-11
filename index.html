@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Menu</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./lib/datatables/dataTables.css" />
+
+</head>
+<body>
+    
+    <div class="container" id="main_hud">
+        <aside id="nav">
+            <div class="top">
+                <div class="profile">
+                    
+                
+                    <div class="info">
+                        <p>Hey,</p>
+                        <b>Miha Nowotny</b>
+                        <small class="text-muted">PD Chief</small>
+                        
+                    </div>
+                </div>
+                <div class="toggle">
+                    <div class="theme-toggler">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="admin-toggler">
+                        <span class="material-icons-sharp active">visibility_off</span>
+                        <span class="material-icons-sharp">visibility</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="sidebar">
+                
+                
+                <a id="dashboard" class="menuselect active" onclick="button1('dashboard')" href="#">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                
+                <a id="namen" class="menuselect" onclick="button1('namen')" href="#">
+                    <span class="material-icons-sharp">person</span>
+                    <h3>Namen suchen</h3>
+                </a>
+
+                <a id="kfz" class="menuselect" onclick="button1('kfz')" href="#">
+                    <span class="material-icons-sharp">directions_car</span>
+                    <h3>KFZ suchen</h3>
+                </a>
+
+                <a id="waffe" class="menuselect" onclick="button1('waffe')" href="#">
+                    <span class="material-icons-sharp">build</span>
+                    <h3>Waffe suchen</h3>
+                </a>
+
+                <a id="fahndung" class="menuselect" onclick="button1('fahndung')" href="#">
+                    <span class="material-icons-sharp">pan_tool</span>
+                    <h3>Fahndung</h3>
+                </a>
+                
+                <a id="berichte" class="menuselect" onclick="button1('berichte')" href="#">
+                    <span class="material-icons-sharp">description</span>
+                    <h3>Berichte</h3>
+                </a>
+
+                <a id="chat" class="menuselect" onclick="button1('chat')" href="#">
+                    <span class="material-icons-sharp">question_answer</span>
+                    <h3>Live-Chat</h3>
+                </a>
+
+                <a id="mitarbeiter" class="menuselect" onclick="button1('mitarbeiter')" href="#">
+                    <span class="material-icons-sharp">groups</span>
+                    <h3>Mitarbeiter</h3>
+                </a>
+
+
+                <a class="menuselect" href="#">
+                    <span class="material-icons-sharp">sos</span>
+                    <h3>Panik</h3>
+                </a>
+
+            </div>
+
+        </aside>
+
+        <div id="container2" class="container2">
+            <main id="con2_left">
+               
+                <!-- generated content -->
+
+            </main>
+
+            <!------------------ENDE MAIN------------------------->
+
+            <div id="con2_right" class="right">
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="./lib/datatables/dataTables.js"></script>
+    <script src="index.js"></script>
+
+    
+
+</body>
+</html>
