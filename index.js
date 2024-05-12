@@ -1601,17 +1601,73 @@ function fillcon2_akte() {
                 </div>
 
                 <div class="mitte">
+                    <h3>Eigenschaften: </h3>
                     
-
-                
+       
                 </div>
                 <div class="rechts">
-                    
+                    <textarea rows="6" cols="50" style="width: 100%;" placeholder="Notizen eingeben"></textarea>
 
                 
                 </div>
             </div>
+            <h2>Aufzeihnungen</h2>
             <div class="unten">
+                
+                
+                
+                <div class="einträge">
+                    <ul class="eintrag">
+                        <li class="einzel">
+                            <div class="zeile1">
+                                <b>Failure to yield to an emergency vehicle:</b>
+                                <p class="danger">Verstoß</p>
+                            </div>
+                            <div class="zeile2">
+                                <p><b>Datum:</b> 12/05/2024</p>
+                                <p><b>Strafe:</b> 500$</p>
+                            </div>
+                        </li>
+                    </ul> 
+                    <ul class="eintrag">
+                        <li class="einzel">
+                            <div class="zeile1">
+                                <b>Failure to yield to an emergency vehicle:</b>
+                                <p class="danger">Verstoß</p>
+                            </div>
+                            <div class="zeile2">
+                                <p><b>Datum:</b> 12/05/2024</p>
+                                <p><b>Strafe:</b> 500$</p>
+                            </div>
+                        </li>
+                    </ul> 
+                    <ul class="eintrag">
+                        <li class="einzel">
+                            <div class="zeile1">
+                                <b>Failure to yield to an emergency vehicle:</b>
+                                <p class="danger">Verstoß</p>
+                            </div>
+                            <div class="zeile2">
+                                <p><b>Datum:</b> 12/05/2024</p>
+                                <p><b>Strafe:</b> 500$</p>
+                            </div>
+                        </li>
+                    </ul> 
+                    <ul class="eintrag">
+                        <li class="einzel">
+                            <div class="zeile1">
+                                <b>Failure to yield to an emergency vehicle:</b>
+                                <p class="danger">Verstoß</p>
+                            </div>
+                            <div class="zeile2">
+                                <p><b>Datum:</b> 12/05/2024</p>
+                                <p><b>Strafe:</b> 500$</p>
+                            </div>
+                        </li>
+                    </ul> 
+
+                    
+                </div>
 
             </div>
 
