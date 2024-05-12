@@ -134,7 +134,42 @@ var spieler = [
 ]
 
 var autos = [
-    
+    {
+        "owner" : "Miha Nowotny",
+        "kennzeichen" : "HSU373",
+        "herkunft" : "shop",
+        "status" : "ausgeparkt"
+    },
+    {
+        "owner" : "Miha Nowotny",
+        "kennzeichen" : "HSU373",
+        "herkunft" : "shop",
+        "status" : "ausgeparkt"
+    },
+    {
+        "owner" : "Miha Nowotny",
+        "kennzeichen" : "HSU373",
+        "herkunft" : "shop",
+        "status" : "ausgeparkt"
+    },
+    {
+        "owner" : "Miha Nowotny",
+        "kennzeichen" : "HSU373",
+        "herkunft" : "shop",
+        "status" : "ausgeparkt"
+    },
+    {
+        "owner" : "Miha Nowotny",
+        "kennzeichen" : "HSU373",
+        "herkunft" : "shop",
+        "status" : "ausgeparkt"
+    },
+    {
+        "owner" : "Miha Nowotny",
+        "kennzeichen" : "HSU373",
+        "herkunft" : "shop",
+        "status" : "ausgeparkt"
+    },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
@@ -1307,65 +1342,9 @@ TableTicket.draw();
 function fillcon2_left_auto() {
     $('#con2_left').html(`
     <div class="mitte-oben">
-        <div id="list" class="box1" onclick="button1('list')" href="#">
-            <span class="material-icons-sharp">groups</span>
-            <div class="middle">
-                <div class="lef">
-                    <h3>Spieler</h3>
-                    <h1>434</h1>
-                </div>
-                <div class="progress">
-                    <svg>
-                        <circle cx="38" cy="38" r="36"></circle>
-                    </svg>
-                    <div class="number">
-                        <p>51%</p>
-                    </div>
-                </div>
-            </div>
-            <small class="text-muted">Aktuell</small>
-        </div>
-        <!-------------------------Ende erste block---------------------------->
-        <div id="auto" class="box2" onclick="button1('autos')" href="#">
-            <span class="material-icons-sharp">directions_car</span>
-            <div class="middle">
-                <div class="lef">
-                    <h3>Fahrzeuge</h3>
-                    <h1>234</h1>
-                </div>
-                <div class="progress">
-                    <svg>
-                        <circle cx="38" cy="38" r="36"></circle>
-                    </svg>
-                    <div class="number">
-                        <p>51%</p>
-                    </div>
-                </div>
-            </div>
-            <small class="text-muted">Aktuell</small>
-        </div>
-        <!-------------------------Ende zweite block---------------------------->
-        <div id="ticket" class="box3" onclick="button1('tickets')" href="#">
-            <span class="material-icons-sharp">analytics</span>
-            <div class="middle">
-                <div class="lef">
-                    <h3>Tickets</h3>
-                    <div class="zahl">
-                        <h1>34</h1>
-                        <span class="message-count">34</span>
-                    </div>
-                </div>
-                <div class="progress">
-                    <svg>
-                        <circle cx="38" cy="38" r="36"></circle>
-                    </svg>
-                    <div class="number">
-                        <p>71%</p>
-                    </div>
-                </div>
-            </div>
-            <small class="text-muted">Aktuell</small>
-        </div>
+        
+        
+        
         <!-------------------------Ende dritter block---------------------------->
     </div>
 
@@ -1384,7 +1363,7 @@ let toolbar = document.createElement('div');
 toolbar.innerHTML = '<h2>Auto Liste</h2>';
 
 let TableAuto = $('#autosTable').DataTable({
-    pageLength: 7, 
+    pageLength: 12, 
     lengthChange: false,
     language: sprache,
     layout: {
@@ -1611,11 +1590,11 @@ function fillcon2_akte() {
                 
                 </div>
             </div>
-            <h2>Aufzeihnungen</h2>
-            <div class="unten">
-                
-                
-                
+            <div class="header">
+                <h2>Aufzeihnungen</h2>
+                <button>Speichern</button>
+            </div>
+            <div class="unten">  
                 <div class="einträge">
                     <ul class="eintrag">
                         <li class="einzel">
@@ -1698,12 +1677,12 @@ function button1(type) {
         $('.menuselect').removeClass('active');
         $('#namen').addClass('active');
     } else if (type == "kfz"){
-        fillcon2_left_ticket()
+        fillcon2_left_auto()
         $('#con2_right').css("display","none")
         $('.menuselect').removeClass('active');
         $('#kfz').addClass('active');
     } else if (type == "waffe"){
-        fillcon2_left_auto()
+        fillcon2_left_ticket()
         $('#con2_right').css("display","none")
         $('.menuselect').removeClass('active');
         $('#waffe').addClass('active');

@@ -745,12 +745,7 @@ main .box-mitte-akte .unten{
     
 }
 
-main .box-mitte-akte h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-}
+
 main .box-mitte-akte .unten .einträge{
     display: grid;
     gap: 10px;
@@ -801,7 +796,43 @@ main .box-mitte-akte .unten .einträge::-webkit-scrollbar-thumb {
 
 
 
+main .box-mitte-akte .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
 
+
+
+main .box-mitte-akte .header button{
+    display: flex;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-success);
+    background: transparent;
+    padding: 5px 15px;
+    border: solid var(--color-success) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 8px;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-right: 110px;    
+}
+
+
+main .box-mitte-akte .header button:hover {
+    transition : 613ms;
+    padding: 5px 15px;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-primary);
+    border: solid 2px var(--color-primary);
+}
 /*--------------------------akte ende--------------------------*/
 
 .right{
