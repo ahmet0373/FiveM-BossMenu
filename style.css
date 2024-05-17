@@ -194,7 +194,7 @@ aside .sidebar{
     background-color: var(--color-background);
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 86%;
     position: relative;
     top: 1rem;
     border-radius: var(--border-radius-3);
@@ -1750,3 +1750,103 @@ aside .sidebar-pop .message-count{
     visibility: visible;
 }
 
+/***************Fahndung person ***************************/
+
+.pop-fahndung-person .top-ticket{
+    display: grid;
+    gap: 15px;
+}
+
+.pop-fahndung-person .top-ticket .input-feld{
+    background: var(--color-background);
+    color: var(--color-dark);
+    display: flex;
+    border: 2px var(--color-primary) solid;
+    border-radius: var(--border-radius-1);
+    box-shadow: 0 1rem 1.5rem var(--color-light);
+
+}
+.pop-fahndung-person .top-ticket .dropdown{
+    margin-top: 10px;
+    margin-left: 60px;
+    min-width: 15em;
+    position: relative;
+    
+    
+}
+
+.pop-fahndung-person .top-ticket .dropdown * {
+    
+    box-sizing: border-box;
+}
+
+.pop-fahndung-person .top-ticket .dropdown .select{
+    background: var(--color-background);
+    color: var(--color-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px var(--color-primary) solid;
+    border-radius: var(--border-radius-1);
+    box-shadow: 0 1rem 1.5rem var(--color-light);
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.pop-fahndung-person .top-ticket .dropdown .select-clicked{
+    border: 2px var(--color-primary) solid;
+}
+
+.pop-fahndung-person .top-ticket .dropdown .select:hover{
+    background: var(--color-primary);
+}
+
+.pop-fahndung-person .top-ticket .dropdown .caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid var(--color-white);
+    transition: 0.3s;
+}
+
+.pop-fahndung-person .top-ticket .dropdown .caret-rotate{
+    transform: rotate(180deg);
+}
+
+.pop-fahndung-person .top-ticket .dropdown .menu{
+    list-style: none;
+    padding: 0.2rem 0.5rem;
+    background: var(--color-background);
+    border: 1px var(--color-primary) solid;
+    
+    border-radius: var(--border-radius-1);
+    color: var(--color-dark);
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.pop-fahndung-person .top-ticket .dropdown .menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.pop-fahndung-person .top-ticket .dropdown .menu li:hover{
+    background: var(--color-primary-variant);
+}
+
+.pop-fahndung-person .top-ticket .dropdown .active{
+    background: var(--color-primary);
+}
+
+.pop-fahndung-person .top-ticket .dropdown .menu-open{
+    display: block;
+    opacity: 1;
+}

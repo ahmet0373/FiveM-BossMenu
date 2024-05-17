@@ -549,7 +549,64 @@ function modal_tickets(daten){
         blur.removeClass('blur');
     });
 }
+// Popup fenster für die fahndung erstellung
+function modal_fahndung(daten){
+    var blur = $('#main_hud');
+    blur.addClass('blur');
 
+    var popupContent = `
+        <div class="popup">
+            <div class="popup-content">
+            <span class="close material-icons-sharp">close</span>
+            
+                    <aside id="nav">
+                        <div class="sidebar-pop">
+                            
+            
+                            <a id="actions" class="menuselect active" onclick="button5('person')" href="#">
+                                <span class="material-icons-sharp">person</span>
+                                <h3>Person</h3>
+                            </a>
+            
+                            <a id="infos" class="menuselect" onclick="button5('fahrzeug')" href="#">
+                                <span class="material-icons-sharp">directions_car</span>
+                                <h3>Fahrzeug</h3>
+                            </a>
+                            <a id="ids" class="menuselect" onclick="button5('andere')" href="#">
+                                <span class="material-icons-sharp">description</span>
+                                <h3>Andere</h3>
+                            </a>
+                            
+                        </div>
+        
+                    </aside>
+                    
+                    <div id="popup_action2">
+                        <!-- generated content -->
+                    </div>
+                    
+            </div>
+        </div>
+    `;
+    
+    
+    $('body').append(popupContent); 
+
+    button5("person");
+
+    $(document).mouseup(function(e) {
+        var popup = $('.popup-content');
+        if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+            $('.popup').remove();
+            blur.removeClass('blur');
+        }
+    });
+    
+    $('.close').click(function() {
+        $('.popup').remove();
+        blur.removeClass('blur');
+    });
+}
 
 function buildcontainers() {
     // standard load
@@ -1559,7 +1616,7 @@ function fillcon2_akte() {
                     <button>Waffen anzeigen</button>     
                 </div>
                 <div class="pop-mod-button">
-                    <button>Fahndung erstellen</button>
+                    <button onclick="modal_fahndung('')">Fahndung erstellen</button>
                     <button>Bericht erstellen</button>     
                 </div>
             </div>
@@ -1696,7 +1753,67 @@ function button6(type){
     }
 }
 
+// fahndungen erstellen popup button
 
+function button5(type) {
+
+    if (type == "person") {
+        fillpopup_fahndung_person() 
+        $('.menuselect').removeClass('active');
+        $('#actions').addClass('active');
+
+    } else if (type == "fahrzeug") {
+        fillpopup_ticket_action()
+        $('.menuselect').removeClass('active');
+        $('#infos').addClass('active');
+    } else if (type == "andere") {
+        fillpopup_ticket_ids()
+        $('.menuselect').removeClass('active');
+        $('#ids').addClass('active');
+    } 
+}
+
+
+function fillpopup_fahndung_person(){
+    $('#popup_action2').html(`
+        <div class="pop-fahndung-person">   
+            <div class="top-ticket">
+
+                <input type="text" class="input-feld" />
+                <input type="text" class="input-feld" />
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Geschlecht</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li class="active">Mänlich</li>
+                        <li>Weiblich</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    `)
+
+    $('#popup_action2 .dropdown').on('click', '.menu li', function() {
+        var selected = $(this).text();
+        $(this).closest('.dropdown').find('.selected').text(selected);
+        $(this).addClass('active').siblings().removeClass('active');
+        
+        
+        $(this).closest('.menu').removeClass('menu-open');
+        $(this).closest('.select').removeClass('select-clicked');
+        $(this).closest('.select').find('.caret').removeClass('caret-rotate');
+    });
+
+    
+    $('#popup_action2 .dropdown .select').click(function() {
+        $(this).toggleClass('select-clicked');
+        $(this).find('.caret').toggleClass('caret-rotate');
+        $(this).siblings('.menu').toggleClass('menu-open');
+    });
+}
 
 
 
