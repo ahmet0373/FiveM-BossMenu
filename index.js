@@ -278,6 +278,33 @@ var mitarbeiter= [
         "nummer" : "1929210",
         "status" : "online",
         "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
     }
 ]
 
@@ -1402,10 +1429,49 @@ function fillcon2_left_dash() {
                             <p><b>Abteilung:</b> LSPD</p>
                             <p><b>Status:</b> Am Berufungsort</p>
                         </li>
+                        <li class="einheit">
+                            <p><b>Einheit:</b> Miha Nowotny</p>
+                            <p><b>Abteilung:</b> LSPD</p>
+                            <p><b>Status:</b> Am Berufungsort</p>
+                        </li>
+                        <li class="einheit">
+                            <p><b>Einheit:</b> Miha Nowotny</p>
+                            <p><b>Abteilung:</b> LSPD</p>
+                            <p><b>Status:</b> Am Berufungsort</p>
+                        </li>
+                        <li class="einheit">
+                            <p><b>Einheit:</b> Miha Nowotny</p>
+                            <p><b>Abteilung:</b> LSPD</p>
+                            <p><b>Status:</b> Am Berufungsort</p>
+                        </li>
                     </ul>               
                 </div>
                 <div class="rechts">
                     <ul class="anrufe">
+                        <li class="anruf">
+                            <div class="first">
+                                <p><b class="danger">Dispatch:</b> 0001</p>
+                                <small class="text-muted">vor 15 Sekunden</small>
+                            </div>
+                            <p><b>Anrufer:</b> Miha Nowotny</p>
+                            <p><b>Ort:</b> LSPD</p>
+                            <p><b>Beschreibung:</b> Brauche Hilfe</p>
+                            <p><b>Antwortende EInheiten:</b> Streife 002, Streife 002, Streife 002, Streife 002, Streife 002</p> 
+                            <button>An Anruf anhängen</button>  
+                        </li>
+
+                        <li class="anruf">
+                            <div class="first">
+                                <p><b class="danger">Dispatch:</b> 0001</p>
+                                <small class="text-muted">vor 15 Sekunden</small>
+                            </div>
+                            <p><b>Anrufer:</b> Miha Nowotny</p>
+                            <p><b>Ort:</b> LSPD</p>
+                            <p><b>Beschreibung:</b> Brauche Hilfe</p>
+                            <p><b>Antwortende EInheiten:</b> Streife 002, Streife 002, Streife 002, Streife 002, Streife 002</p> 
+                            <button>An Anruf anhängen</button>  
+                        </li>
+
                         <li class="anruf">
                             <div class="first">
                                 <p><b class="danger">Dispatch:</b> 0001</p>
@@ -1446,7 +1512,7 @@ let toolbar = document.createElement('div');
 toolbar.innerHTML = '<h2>Spieler Liste</h2>';
 
 let TableSpieler = $('#spielerTable').DataTable({
-    pageLength: 12, 
+    pageLength: 9, 
     lengthChange: false,
     language: sprache,
     layout: {
@@ -1588,7 +1654,7 @@ let toolbar = document.createElement('div');
 toolbar.innerHTML = '<h2>Tickets</h2>';
 
 let TableTicket = $('#ticketsTable').DataTable({
-    pageLength: 7, 
+    pageLength: 9, 
     lengthChange: false,
     language: sprache,
     layout: {
@@ -1765,7 +1831,7 @@ function fillcon2_left_mitarbeiter() {
     toolbar.innerHTML = '<h2>Mitarbeiter Liste</h2>';
 
     let TableMitarbeiter = $('#mitarbeiterTable').DataTable({
-        pageLength: 12, 
+        pageLength: 9, 
         lengthChange: false,
         language: sprache,
         layout: {
@@ -1936,9 +2002,9 @@ function fillcon2_akte() {
     $('#con2_left').html(`
         <div class="mitte-oben">
             <div id="list" class="box1-akte">      
-                
-                <div class="middle">
                     <span class="back material-icons-sharp">arrow_back_ios</span>
+                <div class="middle">
+                    
                     <img src="./images/user.png">
                     
 

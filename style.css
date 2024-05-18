@@ -18,15 +18,15 @@
 --color-dark-variant: #677483;
 --color-background: #f6f6f9;
 
---card-border-radius: 2rem;
---border-radius-1: 0.4rem;
---border-radius-2: 0.8rem;
---border-radius-3: 1.2rem;
+--card-border-radius: 2vw;
+--border-radius-1: 0.4vw;
+--border-radius-2: 0.8vw;
+--border-radius-3: 1.2vw;
 
---card-padding: 1.8rem;
---padding-1: 1.2rem;
+--card-padding: 1.8vw;
+--padding-1: 1.2vw;
 
---box-shadow: 0 2rem 3rem var(--color-light);
+--box-shadow: 0 2vw 3vw var(--color-light);
 }
 
 /* ------------------Darkmode------------------------*/
@@ -39,7 +39,7 @@
     --color-dark: #edeffd;
     --color-dark-variant: #a3bdcc;
     --color-light: rgba(0, 0, 0, 0.4);
-    --box-shadow: 0 1rem 1.5rem var(--color-light);
+    --box-shadow: 0 1vw 1.5vw var(--color-light);
 }
 
 .admin-variables {
@@ -69,7 +69,7 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: poppins, sans-serif;
-    font-size: 0.88rem;
+    font-size: 0.88vw;
     background: transparent;
     user-select: none;
     overflow-x: hidden;
@@ -77,8 +77,8 @@ body {
 }
 
 #main_hud {
-    width: 1150px;
-    height: 720px;
+    width: 70vw;
+    height: 40vw;
     background-color: var(--color-background);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -89,7 +89,7 @@ body {
     display: flex;
     width: 80%;
     margin: 0 auto;
-    margin-top:5rem;
+    margin-top:5vw;
 }
 
  .blur{
@@ -116,32 +116,32 @@ img{
 
 h1{
     font-weight: 800;
-    font-size: 1.8rem;
+    font-size: 1.8vw;
 }
 
 h2{
-    font-size: 1.4rem;
+    font-size: 1.4vw;
 }
 
 h3{
-    font-size: 0.87rem;
+    font-size: 0.87vw;
 }
 
 h4{
-font-size: 0.8rem;
+font-size: 0.8vw;
 }
 
 h5{
-    font-size: 0.77rem;
+    font-size: 0.77vw;
 }
 
 small{
-    font-size: 0.75rem;
+    font-size: 0.75vw;
 }
 
 .profile-photo{
-    width: 6rem;
-    height: 5.8rem;
+    width: 6vw;
+    height: 5.8vw;
     border-radius: 50%;
     overflow-x: hidden;
 }
@@ -182,7 +182,7 @@ aside .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1.0rem;
+    margin-top: 1.0vw;
     border-radius: var(--border-radius-3);
     gap: 15px;
 }
@@ -194,37 +194,37 @@ aside .sidebar{
     background-color: var(--color-background);
     display: flex;
     flex-direction: column;
-    height: 86%;
+    height: 30vw;
     position: relative;
-    top: 1rem;
+    top: 1vw;
     border-radius: var(--border-radius-3);
 }
 
 aside h3{
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.9vw;
 }
 
 aside .sidebar a{
     display: flex;
     color: var(--color-info-dark);
-    margin: 0.2rem;
-    gap: 0.5rem;
+    margin: 0.2vw;
+    gap: 0.5vw;
     align-items: center;
     position: relative;
-    height: 3.7rem;
+    height: 2.5vw;
     transition: all 300ms ease;
-    left: 0.2rem;
+    left: 0.2vw;
 }
 
 aside .sidebar a span{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     transition: all 300ms ease;
 }
 
 aside .sidebar a:last-child{
     position: absolute;
-    bottom: 0.5rem;
+    bottom: 0.5vw;
     width: 100%;
 }
 
@@ -266,7 +266,7 @@ aside .sidebar .message-count{
 /*--------------------------Main------------------------------*/
 
 main{
-    margin-top: 0rem;
+    margin-top: 0vw;
     width: 100%;
     margin-left: 2vw;
     
@@ -275,7 +275,7 @@ main{
 main .mitte-oben{
     display: flex;
 
-    gap: 1.6rem;
+    gap: 1.6vw;
 }
 
 main .mitte-oben > div{
@@ -293,10 +293,10 @@ main .mitte-oben > div:hover{
 
 main .mitte-oben > div span{
     background: var(--color-primary);
-    padding: 0.2rem;
+    padding: 0.2vw;
     border-radius: 50%;
     color: var(--color-white);
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 main .mitte-oben > div.box2 span{
@@ -314,8 +314,8 @@ main .mitte-oben > div .middle{
 }
 
 main .mitte-oben h3{
-    margin: 1rem 0 0.6rem;
-    font-size: 1rem;
+    margin: 1vw 0 0.6vw;
+    font-size: 1vw;
 }
 
 main .mitte-oben .progress{
@@ -326,8 +326,8 @@ main .mitte-oben .progress{
 }
 
 main .mitte-oben svg{
-    width: 7rem;
-    height: 7rem;
+    width: 7vw;
+    height: 7vw;
 }
 
 main .mitte-oben svg circle{
@@ -398,22 +398,22 @@ main .mitte-oben .title{
     font-size: 13px;
     color: var(--color-primary);
     background: transparent;
-    padding: 5px 15px;
+    padding: 0.2vw 1vw;
     border: solid var(--color-primary) 2px;
     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-    border-radius: 8px;
+    border-radius: 0.5vw;
     transition: 613ms;
     transform: translateY(0);
     cursor: pointer;
     text-transform: uppercase; 
     text-decoration: none;
-    margin-top: 15px;
+    margin-top: 0.8vw;
     width: 49%;
 }
 
 .mitte-oben button:hover {
     transition : 613ms;
-    padding: 5px 15px;
+    padding: 0.2vw 1vw;
     transform : translateY(-0px);
     background: transparent;
     color: var(--color-success);
@@ -452,13 +452,13 @@ main .mitte-oben .title{
 
 main .box-mitte{
     
-    margin-top: 1rem;
+    margin-top: 1vw;
 }
 
 
 
 main .box-mitte h2{
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.8vw;
 }
 
 main .box-mitte table{
@@ -476,7 +476,7 @@ main .box-mitte table:hover{
 }
 
 main table tbody td{
-    height: 2.8rem;
+    height: 2.8vw;
     border-bottom: 1px solid var(--color-light);
     color: var(--color-dark-variant);
 }
@@ -488,7 +488,7 @@ main table tbody tr:last-child td {
 main .box-mitte a{
     text-align: center;
     display: block;
-    margin: 1rem auto;
+    margin: 1vw auto;
     color: var(--color-primary);
 }
 main .box-mitte .linksrechts{
@@ -515,7 +515,7 @@ main .box-mitte .links{
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
-    height: 430px;
+    height: 22vw;
     width: 49%;
     overflow-y: auto;
     
@@ -523,7 +523,7 @@ main .box-mitte .links{
 
 
 main .box-mitte .links::-webkit-scrollbar {
-    width: 2px;
+    width: 0.2vw;
 }
 
 main .box-mitte .links::-webkit-scrollbar-track {
@@ -533,7 +533,7 @@ main .box-mitte .links::-webkit-scrollbar-track {
 main .box-mitte .links::-webkit-scrollbar-button:start,
 main .box-mitte .links::-webkit-scrollbar-button:end {
     display: block;
-    height: 10px;
+    height: 0.7vw;
 }
 
 main .box-mitte .links::-webkit-scrollbar-thumb {
@@ -545,12 +545,20 @@ main .box-mitte .einheit{
     display: grid;
     gap: 15px;
     background: var(--color-white);
-    padding: 1.5rem;
+    padding: 1.5vw;
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     
 }
+main .box-mitte .einheiten{
+    display: grid;
+    gap: 1vw;
+}
 
+main .box-mitte .anrufe{
+    display: grid;
+    gap: 1vw;
+}
 
 main .box-mitte .rechts{
     display: grid;
@@ -559,14 +567,14 @@ main .box-mitte .rechts{
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
-    height: 430px;
+    height: 22vw;
     width: 49%;
     overflow-y: auto;
     
 }
 
 main .box-mitte .rechts::-webkit-scrollbar {
-    width: 2px;
+    width: 0.2vw;
 }
 
 main .box-mitte .rechts::-webkit-scrollbar-track {
@@ -576,7 +584,7 @@ main .box-mitte .rechts::-webkit-scrollbar-track {
 main .box-mitte .rechts::-webkit-scrollbar-button:start,
 main .box-mitte .rechts::-webkit-scrollbar-button:end {
     display: block;
-    height: 10px; 
+    height: 0.7vw; 
 }
 
 main .box-mitte .rechts::-webkit-scrollbar-thumb {
@@ -591,7 +599,7 @@ main .box-mitte .anruf{
     display: grid;
     gap: 15px;
     background: var(--color-white);
-    padding: 1.5rem;
+    padding: 1.5vw;
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     
@@ -631,21 +639,22 @@ main .mitte-oben .box1-akte {
     gap: 20px;
 }
 
-main .mitte-oben .box1-akte span{
+main .mitte-oben .box1-akte  span{
    
-    
-    top: 1vw;
-    left: 595px;
+    position: relative;
+    left: -1vw;
+    top: -1vw;
     width: 12px;
     height: 12px;
     background-color: transparent;
     color: var(--color-dark);
     cursor: pointer;
     
-    
 }
 
 main .mitte-oben .box1-akte .middle img{
+    position: relative;
+    left: -1vw;
     width: 128px;
     height: 128px;
 }
@@ -669,7 +678,7 @@ main .box-mitte-akte .links{
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
-    width: 25%;
+    width: 28%;
 }
 
 main .box-mitte-akte .mitte{
@@ -678,7 +687,7 @@ main .box-mitte-akte .mitte{
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     width: 40%;
-    height: 150px;
+    height: 100%;
     overflow-y: auto;
 }
 
@@ -707,25 +716,26 @@ main .box-mitte-akte .rechts{
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     width: 40%;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 main .box-mitte-akte .rechts textarea{
     
     background: var(--color-white);
     color: var(--color-dark);
-    
+    height: 100%;
+    font-family: poppins, sans-serif;
 }
 
 main .box-mitte-akte .rechts textarea::placeholder{
     color: var(--color-dark);
-    
+    font-family: poppins, sans-serif;
     
 }
 
 
 main .box-mitte-akte .rechts textarea::-webkit-scrollbar {
-    width: 2px;
+    width: 0.2vw;
 }
 
 main .box-mitte-akte .rechts textarea::-webkit-scrollbar-track {
@@ -748,26 +758,26 @@ main .box-mitte-akte .unten{
 
 main .box-mitte-akte .unten .einträge{
     display: grid;
-    gap: 10px;
-    height: 250px;
+    gap: 0.5vw;
+    height: 11vw;
     overflow-y: auto;
 
 }
 main .box-mitte-akte .unten .einträge .eintrag .einzel{
     display: grid;
-    gap: 10px;
+    gap: 1vwpx;
 }
 main .box-mitte-akte .unten .einträge .eintrag .einzel .zeile1{
     
     display: flex;
     justify-content: space-between;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 1vw;
 }
 main .box-mitte-akte .unten .einträge .eintrag .einzel .zeile2{
     display: flex;
     justify-content: space-between;
-    font-size: 1rem;
+    font-size: 1vw;
 }
 
 
@@ -775,12 +785,12 @@ main .box-mitte-akte .unten .einträge .eintrag{
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
-    height: 100px;
+    height: 6vw;
     
 }
 
 main .box-mitte-akte .unten .einträge::-webkit-scrollbar {
-    width: 2px;
+    width: 0.2vw;
 }
 
 main .box-mitte-akte .unten .einträge::-webkit-scrollbar-track {
@@ -800,7 +810,7 @@ main .box-mitte-akte .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 1vw;
 }
 
 
@@ -849,7 +859,7 @@ main .box-mitte-akte .header button:hover {
 
 #nav .toggle{
     display: grid;
-    row-gap: 1rem;
+    row-gap: 1vw;
 }
 
 #nav .theme-toggler{
@@ -857,14 +867,14 @@ main .box-mitte-akte .header button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 1.5rem;
-    width: 4.0rem;
+    height: 1.5vw;
+    width: 4.0vw;
     cursor: pointer;
     border-radius: var(--border-radius-1);
 }
 
 #nav .theme-toggler span{
-    font-size: 1.0rem;
+    font-size: 1.0vw;
     width: 50%;
     height: 100%;
     display: flex;
@@ -883,14 +893,14 @@ main .box-mitte-akte .header button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 1.5rem;
-    width: 4.0rem;
+    height: 1.5vw;
+    width: 4.0vw;
     cursor: pointer;
     border-radius: var(--border-radius-1);
 }
 
 #nav .admin-toggler span{
-    font-size: 1.0rem;
+    font-size: 1.0vw;
     width: 50%;
     height: 100%;
     display: flex;
@@ -905,9 +915,9 @@ main .box-mitte-akte .header button:hover {
 }
 
 #nav .top .profile{
-    font-size: 1rem;
+    font-size: 1vw;
     display: flex;
-    gap: 1rem;
+    gap: 1vw;
     text-align: left;
 }
 
@@ -920,12 +930,12 @@ main .box-mitte-akte .header button:hover {
 
 
 .right .box-rechtss{
-    margin-top: 0.5rem;
+    margin-top: 0.5vw;
    
 }
 
 .right .box-rechtss h2{
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5vw;
 }
 
 .right .box-rechtss{
@@ -942,9 +952,9 @@ main .box-mitte-akte .header button:hover {
 
 .right .box-rechtss .updates .update{
     display: grid;
-    grid-template-columns: 2.6rem auto;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    grid-template-columns: 2.6vw auto;
+    gap: 1vw;
+    margin-bottom: 1vw;
 }
 
 .right .box-rechtss .updates .update .profile-photo{
@@ -1029,11 +1039,11 @@ main .box-mitte-akte .header button:hover {
 
 .popup {
     position: fixed;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30vw; 
-    height: 20vw; 
+    width: 38vw; 
+    height: 27vw; 
     background-color: var(--color-white);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
@@ -1044,7 +1054,7 @@ main .box-mitte-akte .header button:hover {
 .popup-content {
     display: flex;
     padding: var(--card-padding);
-    gap: 3rem;
+    gap: 3vw;
 }
 
 
@@ -1063,10 +1073,10 @@ aside .sidebar-pop{
     background-color: var(--color-background);
     display: flex;
     flex-direction: column;
-    height: 17vw;
-    width: 6vw;
+    height: 22vw;
+    width: 7.5vw;
     position: relative;
-    top: 1rem;
+    top: 1vw;
     border-radius: var(--border-radius-3);
 }
 
@@ -1074,17 +1084,17 @@ aside .sidebar-pop{
 aside .sidebar-pop a{
     display: flex;
     color: var(--color-info-dark);
-    margin: 0.5rem;
-    gap: 1rem;
+    margin: 0.5vw;
+    gap: 1vw;
     align-items: center;
     position: relative;
-    height: 3.7rem;
+    height: 3.7vw;
     transition: all 300ms ease;
-    left: 0.2rem;
+    left: 0.2vw;
 }
 
 aside .sidebar-pop a span{
-    font-size: 2rem;
+    font-size: 2vw;
     transition: all 300ms ease;
 }
 
@@ -1123,15 +1133,15 @@ aside .sidebar-pop .message-count{
 /************************Popup Fenster actions*********************************/
 
 .popup-content .pop-info{
-    margin-top: 1rem;
+    margin-top: 1vw;
     background-color: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
     row-gap: 1vw;
-    height: 17vw;
-    width: 21vw;
+    height: 22vw;
+    width: 25vw;
     margin-left: 1vw;
     text-align: center;
 }
@@ -1179,7 +1189,7 @@ aside .sidebar-pop .message-count{
 }
 
 .popup-content .pop-info .dropdown{
-    min-width: 15em;
+    min-width: 12vw;
     position: relative;
     margin: auto;
     
@@ -1197,8 +1207,8 @@ aside .sidebar-pop .message-count{
     align-items: center;
     border: 2px var(--color-primary) solid;
     border-radius: var(--border-radius-1);
-    box-shadow: 0 1rem 1.5rem var(--color-light);
-    padding: 1em;
+    box-shadow: 0 1vw 1.5vw var(--color-light);
+    padding: 0.5vw;
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -1225,7 +1235,7 @@ aside .sidebar-pop .message-count{
 
 .popup-content .pop-info .dropdown .menu{
     list-style: none;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2vw 0.5vw;
     background: var(--color-background);
     border: 1px var(--color-primary) solid;
     
@@ -1242,7 +1252,7 @@ aside .sidebar-pop .message-count{
     z-index: 1;
 }
 .popup-content .pop-info .dropdown .menu li{
-    padding: 0.7em 0.5em;
+    padding: 0.1vw 0.5em;
     margin: 0.3em 0;
     border-radius: 0.5em;
     cursor: pointer;
@@ -1268,7 +1278,7 @@ aside .sidebar-pop .message-count{
     width: 100%; 
     background-color: var(--color-white);
     border-radius: var(--card-border-radius);
-    box-shadow: 0 1rem 1rem var(--color-light);
+    box-shadow: 0 1vw 1vw var(--color-light);
     transition: all 300ms ease;
     padding: 20px; 
 }
@@ -1296,7 +1306,7 @@ aside .sidebar-pop .message-count{
     cursor: pointer;
     text-transform: uppercase; 
     text-decoration: none;
-    top: 7rem;
+    top: 7vw;
 }
 
 .pop-note button:hover {
@@ -1309,16 +1319,23 @@ aside .sidebar-pop .message-count{
 }
 
 .popup-content .pop-info-info{
-    margin-top: 1rem;
+    margin-top: 1vw;
     background-color: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
-    row-gap: 2rem;
-    height: 17vw;
-    width: 21vw;
+    row-gap: 2vw;
+    height: 22vw;
+    width: 25vw;
     margin-left: 1vw;
+}
+.popup-content .pop-info-info .pop-note textarea{
+    height: 7vw;
+}
+
+.popup-content .pop-info-info textarea{
+    height: 100%;
 }
 
 .pop-info-info h3 {
@@ -1334,13 +1351,13 @@ aside .sidebar-pop .message-count{
 
 /************************Popup Fenster ids*********************************/
 .popup-content .pop-info-ids{
-    margin-top: 1rem;
+    margin-top: 1vw;
     background-color: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
-    row-gap: 1rem;
+    row-gap: 1vw;
     height: 35vh;
     width: 100%;
 }
@@ -1349,16 +1366,16 @@ aside .sidebar-pop .message-count{
     justify-content: space-between; 
     align-items: center; 
     background-color: var(--color-white);
-    padding: 1rem;
-    margin-top: 0.5rem;
+    padding: 1vw;
+    margin-top: 0.5vw;
     border-radius: var(--card-border-radius);
-    box-shadow: 0 1rem 1.5rem var(--color-light);
+    box-shadow: 0 1vw 1.5vw var(--color-light);
     transition: all 300ms ease;
     width: 100%;
 }
 
 .popup-content .pop-info .ids:first-child {
-    margin-top: 0rem;
+    margin-top: 0vw;
 }
 
 .popup-content .pop-info .ids h4 {
@@ -1367,7 +1384,7 @@ aside .sidebar-pop .message-count{
 
 .popup-content .pop-info .ids .material-icons-sharp {
     cursor: pointer; 
-    margin-left: 0rem;
+    margin-left: 0vw;
 }
 
 .popup-content .pop-info .ids .material-icons-sharp:hover {
@@ -1380,7 +1397,7 @@ aside .sidebar-pop .message-count{
 
 
 .popup-content .pop-info-ban{
-    margin-top: 1rem;
+    margin-top: 1vw;
     background-color: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -1392,7 +1409,7 @@ aside .sidebar-pop .message-count{
 }
 
 .popup-content .pop-info-ban h3{
-    margin-top: 1rem;
+    margin-top: 1vw;
 }
 
 .popup-content .pop-info-ban .ban-reason{
@@ -1404,7 +1421,7 @@ aside .sidebar-pop .message-count{
     align-items: center;
     border: 2px var(--color-primary) solid;
     border-radius: var(--border-radius-1);
-    box-shadow: 0 1rem 1.5rem var(--color-light);
+    box-shadow: 0 1vw 1.5vw var(--color-light);
     padding: 1em;
     cursor: pointer;
     transition: background 0.3s;
@@ -1414,7 +1431,7 @@ aside .sidebar-pop .message-count{
 
 
 .popup-content .pop-info-ban .pop-button{
-    margin-top: 2rem;
+    margin-top: 2vw;
     font-family: poppins, sans-serif;
     font-weight: 600;
     font-size: 13px;
@@ -1453,7 +1470,7 @@ aside .sidebar-pop .message-count{
     height: 120px;
     background-color: var(--color-white);
     border-radius: var(--card-border-radius);
-    box-shadow: 0 1rem 1rem var(--color-light);
+    box-shadow: 0 1vw 1vw var(--color-light);
     transition: all 300ms ease;
     padding: 20px; 
 }
@@ -1487,13 +1504,13 @@ aside .sidebar-pop .message-count{
 }
 
 .popup-content .pop-info-ticket{
-    margin-top: 1rem;
+    margin-top: 1vw;
     background-color: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
-    row-gap: 2rem;
+    row-gap: 2vw;
     height: 35vh;
     width: 600px;
 }
@@ -1526,7 +1543,7 @@ aside .sidebar-pop .message-count{
     align-items: center;
     border: 2px var(--color-primary) solid;
     border-radius: var(--border-radius-1);
-    box-shadow: 0 1rem 1.5rem var(--color-light);
+    box-shadow: 0 1vw 1.5vw var(--color-light);
     padding: 1em;
     cursor: pointer;
     transition: background 0.3s;
@@ -1554,7 +1571,7 @@ aside .sidebar-pop .message-count{
 
 .pop-info-ticket .top-ticket .dropdown .menu{
     list-style: none;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2vw 0.5vw;
     background: var(--color-background);
     border: 1px var(--color-primary) solid;
     
@@ -1638,7 +1655,7 @@ aside .sidebar-pop .message-count{
     cursor: pointer;
     color: var(--color-dark);
     max-width: 90%;
-    font-size: 0.95rem;
+    font-size: 0.95vw;
     padding: 12px 16px;
     border-radius: 10px 10px 0 10px;
     background-color: var(--color-primary);
@@ -1661,7 +1678,7 @@ aside .sidebar-pop .message-count{
 
 .chatbot{
     background-color: var(--color-white);
-    margin-top: 1rem;
+    margin-top: 1vw;
     position: fixed;
     overflow: hidden;
     width: 600px;
@@ -1682,7 +1699,7 @@ aside .sidebar-pop .message-count{
 
 .chatbot header h2{
     color: var(--color-dark);
-    font-size: 1.4rem;
+    font-size: 1.4vw;
 }
 
 .chatbot .chatbox{
@@ -1729,7 +1746,7 @@ aside .sidebar-pop .message-count{
 .chatbot .chat p{
     color: var(--color-dark);
     max-width: 75%;
-    font-size: 0.95rem;
+    font-size: 0.95vw;
     padding: 12px 16px;
     border-radius: 10px 10px 0 10px;
     background-color: var(--color-primary);
@@ -1759,7 +1776,7 @@ aside .sidebar-pop .message-count{
     background-color: var(--color-white);
     border: none;
     outline: none;
-    font-size: 0.95rem;
+    font-size: 0.95vw;
     resize: none;
     padding:16px 15px 16px 0;
 
@@ -1772,7 +1789,7 @@ aside .sidebar-pop .message-count{
     height: 55px;
     line-height: 55px;
     color: var(--color-primary);
-    font-size: 1.35rem;
+    font-size: 1.35vw;
     cursor: pointer;
     visibility: hidden;
 }
@@ -1794,7 +1811,7 @@ aside .sidebar-pop .message-count{
     display: flex;
     border: 2px var(--color-primary) solid;
     border-radius: var(--border-radius-1);
-    box-shadow: 0 1rem 1.5rem var(--color-light);
+    box-shadow: 0 1vw 1.5vw var(--color-light);
 
 }
 .pop-fahndung-person .top-ticket .dropdown{
@@ -1819,7 +1836,7 @@ aside .sidebar-pop .message-count{
     align-items: center;
     border: 2px var(--color-primary) solid;
     border-radius: var(--border-radius-1);
-    box-shadow: 0 1rem 1.5rem var(--color-light);
+    box-shadow: 0 1vw 1.5vw var(--color-light);
     padding: 1em;
     cursor: pointer;
     transition: background 0.3s;
@@ -1847,7 +1864,7 @@ aside .sidebar-pop .message-count{
 
 .pop-fahndung-person .top-ticket .dropdown .menu{
     list-style: none;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2vw 0.5vw;
     background: var(--color-background);
     border: 1px var(--color-primary) solid;
     
