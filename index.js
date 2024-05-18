@@ -133,6 +133,154 @@ var spieler = [
         }
 ]
 
+var mitarbeiter= [
+    
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    },
+    {
+        "vorname" : "Miha",
+        "nachname" : "Nowotny",
+        "dienstnummer" : "69",
+        "rang" : "pd chief",
+        "nummer" : "1929210",
+        "status" : "online",
+        "id" : "31"
+    }
+]
+
 var autos = [
     {
         "owner" : "Miha Nowotny",
@@ -632,7 +780,65 @@ function buildcontainers() {
     })
     
 }
+// Popup fenster für die mitarbeiter
+function modal_mitarbeiter(daten){
+    var blur = $('#main_hud');
+    blur.addClass('blur');
 
+    var popupContent = `
+        <div class="popup">
+            <div class="popup-content">
+            <span class="close material-icons-sharp">close</span>
+            
+                    <aside id="nav">
+                        <div class="sidebar-pop">
+                            
+            
+                            <a id="actions" class="menuselect active" onclick="button2('actions')" href="#">
+                                <span class="material-icons-sharp">bolt</span>
+                                <h3>Actions</h3>
+                            </a>
+            
+                            <a id="infos" class="menuselect" onclick="button2('infos')" href="#">
+                                <span class="material-icons-sharp">account_circle</span>
+                                <h3>infos</h3>
+                            </a>
+            
+                    
+
+                           
+            
+            
+                        </div>
+        
+                    </aside>
+                    
+                    <div id="popup_action">
+                        <!-- generated content -->
+                    </div>
+                    
+            </div>
+        </div>
+    `;
+    
+    
+    $('body').append(popupContent); 
+
+    button2("actions");
+
+    $(document).mouseup(function(e) {
+        var popup = $('.popup-content');
+        if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+            $('.popup').remove();
+            blur.removeClass('blur');
+        }
+    });
+    
+    $('.close').click(function() {
+        $('.popup').remove();
+        blur.removeClass('blur');
+    });
+}
 
 function copyToClipboard(text) {
     var textarea = document.createElement("textarea");
@@ -649,37 +855,96 @@ function fillpopup_action(){
     $('#popup_action').html(`
         <div class="pop-info">      
             <h2>Spieler Aktionen</h2>
-            <h3>Moderation</h3>
+            <h3>Berechtigung</h3>
             <div class="pop-mod">
-                <button class="pop-button">DM</button>
-                <button class="pop-button">WARN</button>
-                <button class="pop-button">KICK</button>
-                <button class="pop-button">GIVE ADMIN</button>
+                <div class="pop-mod2">
+                    <div class="checkbox-wrapper-13">
+                        <input id="c1-13" type="checkbox">
+                        <label for="c1-13">Checkbox</label>
+                    </div>
+                    <div class="checkbox-wrapper-13">
+                        <input id="c2-13" type="checkbox">
+                        <label for="c2-13">Checkbox</label>
+                    </div>
+                    <div class="checkbox-wrapper-13">
+                        <input id="c3-13" type="checkbox">
+                        <label for="c3-13">Checkbox</label>
+                    </div>
+                </div>
+                <div class="pop-mod2">
+                    <div class="checkbox-wrapper-13">
+                        <input id="c4-13" type="checkbox">
+                        <label for="c4-13">Checkbox</label>
+                    </div>
+                    <div class="checkbox-wrapper-13">
+                        <input id="c5-13" type="checkbox">
+                        <label for="c5-13">Checkbox</label>
+                    </div>
+                    <div class="checkbox-wrapper-13">
+                        <input id="c6-13" type="checkbox">
+                        <label for="c6-13">Checkbox</label>
+                    </div>
+                </div>
+                <div class="pop-mod2">
+                    <div class="checkbox-wrapper-13">
+                        <input id="c7-13" type="checkbox">
+                        <label for="c7-13">Checkbox</label>
+                    </div>
+                </div>
+                
+                
+                
+          
             </div>
-            <h3>Interaction</h3>
+            <h3>Ränge</h3>
             <div class="pop-mod">
-                <button class="pop-button">heal</button>
-                <button class="pop-button">GO TO</button>
-                <button class="pop-button">bring</button>
-                <button class="pop-button">spectate</button>
-                <button class="pop-button">toggle freeze</button>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Anwärter</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li class="active">Anwärter</li>
+                        <li>Rang 1</li>
+                        <li>Rang 2</li>
+                        <li>Rang 3</li>
+                        <li>Rang 4</li>
+                        <li>Rang 5</li>
+                        <li>Rang 6</li>
+                        <li>Rang 7</li>
+                        <li>Rang 8</li>
+                    </ul>
+                </div>
             </div>
-            <h3>Einreise</h3>
-            <div class="pop-mod">
-                <button class="pop-button">WL Geben</button>
-                <button class="pop-button">WL Entziehen</button>
-            </div>
+            
         </div>
     `)
+
+    $('#popup_action .dropdown').on('click', '.menu li', function() {
+        var selected = $(this).text();
+        $(this).closest('.dropdown').find('.selected').text(selected);
+        $(this).addClass('active').siblings().removeClass('active');
+        
+        
+        $(this).closest('.menu').removeClass('menu-open');
+        $(this).closest('.select').removeClass('select-clicked');
+        $(this).closest('.select').find('.caret').removeClass('caret-rotate');
+    });
+
+    
+    $('#popup_action .dropdown .select').click(function() {
+        $(this).toggleClass('select-clicked');
+        $(this).find('.caret').toggleClass('caret-rotate');
+        $(this).siblings('.menu').toggleClass('menu-open');
+    });
 }
 
 function fillpopup_info(){
     $('#popup_action').html(`
         <div class="pop-info-info">      
-            <h2>Spieler info</h2>
-            <h3>Session Time: <a>15 Minuten</a></h3>
-            <h3>Play Time: <a>3 day, 12 hours, 23 minutes</a></h3>
-            <h3>Joined: <a>Apirl 28, 2024 - 18:49:23</a></h3>
+            <h2>Mitglieder info</h2>
+            <h3>Im Job seit: <a>Apirl 28, 2024 - 18:49:23</a></h3>
+            <h3>Im Staat seit: <a>Apirl 28, 2024 - 18:49:23</a></h3>
             
             <h3>Notizen über den spieler</h3>
             <div class="pop-note">
@@ -1482,6 +1747,92 @@ TableAuto.draw();
 
 }
 
+function fillcon2_left_mitarbeiter() {
+    $('#con2_left').html(`
+    
+    <!-------------------------Ende insight---------------------------->
+    <div class="box-mitte">
+        
+        <table id="mitarbeiterTable" class="display" width="100%">
+        
+            
+        </table>
+        <!---<a href="#">Mehr Anzeigen</a>---->
+    </div>
+    `)
+
+    let toolbar = document.createElement('div');
+    toolbar.innerHTML = '<h2>Mitarbeiter Liste</h2>';
+
+    let TableMitarbeiter = $('#mitarbeiterTable').DataTable({
+        pageLength: 12, 
+        lengthChange: false,
+        language: sprache,
+        layout: {
+            topStart: toolbar
+        },
+        data : mitarbeiter,
+        'columns' : [
+            {data : 'vorname'},
+            {data : 'nachname'},
+            {data : 'dienstnummer'},
+            {data : 'rang'},
+            {data : 'nummer'},
+            {data : 'status'},
+            {data : 'id'}
+        ],
+        columnDefs: [
+            
+            {
+                title: 'Vorname',
+                targets: 0
+            },
+            {
+                title: 'Nachname',
+                targets: 1
+            },
+            {
+                title: 'Dienstnummer',
+                targets: 2
+            },
+            {
+                title: 'Rang',
+                targets: 3
+            },
+            {
+                title: 'Nummer',
+                targets: 4
+            },
+            {
+                title: 'status',
+                targets: 5
+            },
+            {
+                title: '',
+                targets: 6,
+                sortable: false
+            }
+        ]
+    });
+
+    TableMitarbeiter.on("draw", function() {
+        if (TableMitarbeiter.column(6).nodes()) {
+            TableMitarbeiter.column(6).nodes().each(function(cell, i) {
+                var taskid = $(cell).text().trim();
+                $(cell).html(`
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16" onclick="modal_mitarbeiter('${taskid}')">
+                        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+                    </svg>        
+                `);
+            });    
+        }    
+        
+    })
+
+    TableMitarbeiter.draw();
+
+}
+
 function fillcon2_right() {
     $('#con2_right').html(`
         <div class="top">
@@ -1585,9 +1936,9 @@ function fillcon2_akte() {
     $('#con2_left').html(`
         <div class="mitte-oben">
             <div id="list" class="box1-akte">      
-                <span class="back material-icons-sharp">arrow_back_ios</span>
-                <div class="middle">
                 
+                <div class="middle">
+                    <span class="back material-icons-sharp">arrow_back_ios</span>
                     <img src="./images/user.png">
                     
 
@@ -1743,6 +2094,11 @@ function button1(type) {
         $('#con2_right').css("display","none")
         $('.menuselect').removeClass('active');
         $('#waffe').addClass('active');
+    } else if (type == "mitarbeiter"){
+        fillcon2_left_mitarbeiter()
+        $('#con2_right').css("display","none")
+        $('.menuselect').removeClass('active');
+        $('#mitarbeiter').addClass('active');
     }
 }
 

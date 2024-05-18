@@ -633,8 +633,8 @@ main .mitte-oben .box1-akte {
 
 main .mitte-oben .box1-akte span{
    
-    position: absolute;
-    top: 110px;
+    
+    top: 1vw;
     left: 595px;
     width: 12px;
     height: 12px;
@@ -1007,6 +1007,21 @@ main .box-mitte-akte .header button:hover {
     text-align: center; 
 }
 
+/************************mitarbeitertable*********************************/
+
+
+#mitarbeiterTable {
+    margin: 0 auto; 
+}
+
+#mitarbeiterTable th {
+    text-align: center; 
+}
+
+#mitarbeiterTable td {
+    text-align: center; 
+}
+
 
 
 
@@ -1014,15 +1029,16 @@ main .box-mitte-akte .header button:hover {
 
 .popup {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px; /* Du kannst die Breite nach Bedarf anpassen */
-    height: 400px; /* Quadratische Form */
+    width: 30vw; 
+    height: 20vw; 
     background-color: var(--color-white);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
+    
 }
 
 .popup-content {
@@ -1047,8 +1063,8 @@ aside .sidebar-pop{
     background-color: var(--color-background);
     display: flex;
     flex-direction: column;
-    height: 35vh;
-    width: 120px;
+    height: 17vw;
+    width: 6vw;
     position: relative;
     top: 1rem;
     border-radius: var(--border-radius-3);
@@ -1113,15 +1129,22 @@ aside .sidebar-pop .message-count{
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
-    row-gap: 1rem;
-    height: 35vh;
-    width: 600px;
+    row-gap: 1vw;
+    height: 17vw;
+    width: 21vw;
+    margin-left: 1vw;
+    text-align: center;
 }
 .popup-content .pop-info .pop-mod{
     display: flex;
     margin-top: 5px;
     margin-bottom: 5px;
-    gap: 1rem;
+    gap: 1vw;
+}
+.popup-content .pop-info .pop-mod2{
+    display: grid;
+    gap: 0.5vw;
+    
 }
 .popup-content .pop-info .pop-button{
     font-family: poppins, sans-serif;
@@ -1139,7 +1162,12 @@ aside .sidebar-pop .message-count{
     text-transform: uppercase; 
     text-decoration: none;
 }
-
+.popup-content .pop-info h3 {
+    margin-top: 0.5vw;
+}
+.popup-content .pop-info h2 {
+    text-align: left;
+}
 
 .popup-content .pop-info .pop-button:hover {
     transition : 613ms;
@@ -1148,6 +1176,88 @@ aside .sidebar-pop .message-count{
     background: transparent;
     color: var(--color-success);
     border: solid 2px var(--color-success);
+}
+
+.popup-content .pop-info .dropdown{
+    min-width: 15em;
+    position: relative;
+    margin: auto;
+    
+}
+
+.popup-content .pop-info .dropdown * {
+    box-sizing: border-box;
+}
+
+.popup-content .pop-info .dropdown .select{
+    background: var(--color-background);
+    color: var(--color-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px var(--color-primary) solid;
+    border-radius: var(--border-radius-1);
+    box-shadow: 0 1rem 1.5rem var(--color-light);
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.popup-content .pop-info .dropdown .select-clicked{
+    border: 2px var(--color-primary) solid;
+}
+
+.popup-content .pop-info .dropdown .select:hover{
+    background: var(--color-primary);
+}
+
+.popup-content .pop-info .dropdown .caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid var(--color-white);
+    transition: 0.3s;
+}
+
+.popup-content .pop-info .dropdown .caret-rotate{
+    transform: rotate(180deg);
+}
+
+.popup-content .pop-info .dropdown .menu{
+    list-style: none;
+    padding: 0.2rem 0.5rem;
+    background: var(--color-background);
+    border: 1px var(--color-primary) solid;
+    
+    border-radius: var(--border-radius-1);
+    color: var(--color-dark);
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.popup-content .pop-info .dropdown .menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.popup-content .pop-info .dropdown .menu li:hover{
+    background: var(--color-primary-variant);
+}
+
+.popup-content .pop-info .dropdown .active{
+    background: var(--color-primary);
+}
+
+.popup-content .pop-info .dropdown .menu-open{
+    display: block;
+    opacity: 1;
 }
 
 /************************Popup Fenster infos*********************************/
@@ -1206,13 +1316,15 @@ aside .sidebar-pop .message-count{
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
     row-gap: 2rem;
-    height: 35vh;
-    width: 600px;
+    height: 17vw;
+    width: 21vw;
+    margin-left: 1vw;
 }
 
 .pop-info-info h3 {
     margin-top: 5px; 
 }
+
 
 .pop-info-info a {
     color: var(--color-primary); 
@@ -1275,8 +1387,8 @@ aside .sidebar-pop .message-count{
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
     row-gap: 10px;
-    height: 35vh;
-    width: 600px;
+    height: 17vw;
+    width: 30vw;
 }
 
 .popup-content .pop-info-ban h3{
@@ -1299,88 +1411,7 @@ aside .sidebar-pop .message-count{
     width: 100%;
     
 }
-.popup-content .pop-info-ban .dropdown{
-    margin-top: 10px;
-    min-width: 15em;
-    position: relative;
-    
-    
-}
 
-.popup-content .pop-info-ban .dropdown * {
-    box-sizing: border-box;
-}
-
-.popup-content .pop-info-ban .dropdown .select{
-    background: var(--color-background);
-    color: var(--color-dark);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px var(--color-primary) solid;
-    border-radius: var(--border-radius-1);
-    box-shadow: 0 1rem 1.5rem var(--color-light);
-    padding: 1em;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-.popup-content .pop-info-ban .dropdown .select-clicked{
-    border: 2px var(--color-primary) solid;
-}
-
-.popup-content .pop-info-ban .dropdown .select:hover{
-    background: var(--color-primary);
-}
-
-.popup-content .pop-info-ban .dropdown .caret{
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid var(--color-white);
-    transition: 0.3s;
-}
-
-.popup-content .pop-info-ban .dropdown .caret-rotate{
-    transform: rotate(180deg);
-}
-
-.popup-content .pop-info-ban .dropdown .menu{
-    list-style: none;
-    padding: 0.2rem 0.5rem;
-    background: var(--color-background);
-    border: 1px var(--color-primary) solid;
-    
-    border-radius: var(--border-radius-1);
-    color: var(--color-dark);
-    position: absolute;
-    top: 3em;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    opacity: 0;
-    display: none;
-    transition: 0.2s;
-    z-index: 1;
-}
-.popup-content .pop-info-ban .dropdown .menu li{
-    padding: 0.7em 0.5em;
-    margin: 0.3em 0;
-    border-radius: 0.5em;
-    cursor: pointer;
-}
-.popup-content .pop-info-ban .dropdown .menu li:hover{
-    background: var(--color-primary-variant);
-}
-
-.popup-content .pop-info-ban .dropdown .active{
-    background: var(--color-primary);
-}
-
-.popup-content .pop-info-ban .dropdown .menu-open{
-    display: block;
-    opacity: 1;
-}
 
 .popup-content .pop-info-ban .pop-button{
     margin-top: 2rem;
@@ -1850,3 +1881,99 @@ aside .sidebar-pop .message-count{
     display: block;
     opacity: 1;
 }
+/********************checkbox allgemein*****************/
+.checkbox-wrapper-13 input[type=checkbox] {
+    --active: var(--color-primary);
+    --active-inner: var(--color-background);
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: var(--color-primary);
+    --background: var(--color-background);
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+      
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: 1px solid var(--bc, var(--border));
+      background: var(--b, var(--background));
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:after {
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: .3s;
+      --d-t: .6s;
+      --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: 0.9;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:disabled:checked {
+      --b: var(--disabled-inner);
+      --bc: var(--border);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:disabled + label {
+      cursor: not-allowed;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:hover:not(:checked):not(:disabled) {
+      --bc: var(--border-hover);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch) {
+      width: 21px;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):after {
+      opacity: var(--o, 0);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):checked {
+      --o: 1;
+    }
+    .checkbox-wrapper-13 input[type=checkbox] + label {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch) {
+      border-radius: 7px;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):after {
+      width: 5px;
+      height: 9px;
+      border: 2px solid var(--active-inner);
+      border-top: 0;
+      border-left: 0;
+      left: 7px;
+      top: 4px;
+      transform: rotate(var(--r, 20deg));
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):checked {
+      --r: 43deg;
+    }
+  
+
+  .checkbox-wrapper-13 * {
+    box-sizing: inherit;
+  }
+  .checkbox-wrapper-13 *:before,
+  .checkbox-wrapper-13 *:after {
+    box-sizing: inherit;
+  }
