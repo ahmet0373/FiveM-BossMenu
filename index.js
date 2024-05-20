@@ -783,6 +783,103 @@ function modal_fahndung(daten){
     });
 }
 
+// Popup fenster für die bericht erstellung
+function modal_bericht(daten){
+    
+
+
+    var blur = $('#main_hud');
+    blur.addClass('blur');
+
+    var popupContent = `
+        <div class="popup-bericht">
+            <div class="popup-content-bericht">
+                <span class="close material-icons-sharp">close</span>
+
+                <div class="selector-container">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" onclick="toggleDropdown()">Bitte auswählen</button>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li onclick="selectOption(this, 'Text 1')">Option 1</li>
+                                <li onclick="selectOption(this, 'Text 2')">Option 2</li>
+                                <li onclick="selectOption(this, 'Text 3')">Option 3</li>
+                                <li onclick="selectOption(this, 'Text 4')">Option 4</li>
+                                <li onclick="selectOption(this, 'Text 5')">Option 5</li>
+                                <li onclick="selectOption(this, 'Text 6')">Option 6</li>
+                                <li onclick="selectOption(this, 'Text 7')">Option 7</li>
+                                <li onclick="selectOption(this, 'Text 8')">Option 8</li>
+                                <li onclick="selectOption(this, 'Text 9')">Option 9</li>
+                                <li onclick="selectOption(this, 'Text 10')">Option 10</li>
+                                <!-- Weitere Optionen hier hinzufügen -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <p>Lorem ipsum dolor sit amet, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+
+                    <a><b>Strafe:</b>   <select name="whishlist" class="selector">
+                                            <option>250$</option>
+                                            <option>500$</option>
+                                            <option>1000$</option>
+                                        </select>
+                    </a>
+
+                    <b>6 monate Haft</b>
+                </div>
+                    
+                    
+            </div>
+        </div>
+    `;
+    
+    
+    
+    
+    document.addEventListener('click', function(event) {
+        const dropdown = document.querySelector('.dropdown');
+        if (!dropdown.contains(event.target)) {
+            closeDropdown();
+        }
+    });
+
+    $('body').append(popupContent); 
+
+   
+
+    $(document).mouseup(function(e) {
+        var popup = $('.popup-content-bericht');
+        if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+            $('.popup-bericht').remove();
+            blur.removeClass('blur');
+        }
+    });
+    
+    $('.close').click(function() {
+        $('.popup-bericht').remove();
+        blur.removeClass('blur');
+    });
+}
+
+function toggleDropdown() {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+}
+
+function selectOption(option) {
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    dropdownToggle.textContent = option.textContent;
+    closeDropdown();
+}
+
+function closeDropdown() {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdownMenu.style.display = 'none';
+}
+
+
 function buildcontainers() {
     // standard load
     fillcon2_left_dash()
@@ -2028,7 +2125,7 @@ function fillcon2_akte() {
                 
             </div>
             <!-------------------------Ende erste block---------------------------->
-            <div id="auto" class="box2" onclick="button1('autos')" href="#">
+            <div id="auto" class="box2" href="#">
                 
                 <div class="middle">
                     <span class="material-icons-sharp">manage_accounts</span>
@@ -2042,7 +2139,7 @@ function fillcon2_akte() {
                 </div>
                 <div class="pop-mod-button">
                     <button onclick="modal_fahndung('')">Fahndung erstellen</button>
-                    <button>Bericht erstellen</button>     
+                    <button onclick="modal_bericht('')">Bericht erstellen</button>     
                 </div>
             </div>
             <!-------------------------Ende zweite block---------------------------->
@@ -2198,35 +2295,35 @@ function button5(type) {
         $('#actions').addClass('active');
 
     } else if (type == "fahrzeug") {
-        fillpopup_ticket_action()
+        fillpopup_fahndung_fahrzeug()
         $('.menuselect').removeClass('active');
         $('#infos').addClass('active');
     } else if (type == "andere") {
-        fillpopup_ticket_ids()
+        fillpopup_fahndung_andere()
         $('.menuselect').removeClass('active');
         $('#ids').addClass('active');
     } 
 }
 
 
-function fillpopup_fahndung_person(){
+function fillpopup_fahndung_fahrzeug(){
     $('#popup_action3').html(`
-        <div class="pop-fahndung-person">   
+        <div class="pop-fahndung-fahrzeug">   
             <div class="top-ticket">
-                <h3>Vorname</h3>
-                <input type="text" class="input-feld" placeholder="Vorname" />
+                <h4>Kennzeichen</h4>
+                <input type="text" class="input-feld" placeholder="Kennzeichen" />
 
-                <h3>Nachname</h3>
-                <input type="text" class="input-feld" placeholder="nachname" />
+                <h4>Farbe</h4>
+                <input type="text" class="input-feld" placeholder="Farbe" />
 
-                <h3>Geschlecht</h3>
-                <select name="whishlist" class="selector" size="4">
-                        <option>Männlich</option>
-                        <option>Weiblich</option>
-                </select>
+                <h4>Marke</h4>
+                <input type="text" class="input-feld" placeholder="Marke" />
+
+                <h4>Modell</h4>
+                <input type="text" class="input-feld" placeholder="Modell" />
 
 
-                <h3>Fahndungsinformationen</h3>
+                <h4>Fahndungsinformationen</h4>
                 <textarea type="text" class="text-feld" placeholder="Beschreiben Sie wofür der TV Fahndet wird"></textarea>
 
 
@@ -2236,23 +2333,52 @@ function fillpopup_fahndung_person(){
         </div>
     `)
 
-    $('#popup_action2 .dropdown').on('click', '.menu li', function() {
-        var selected = $(this).text();
-        $(this).closest('.dropdown').find('.selected').text(selected);
-        $(this).addClass('active').siblings().removeClass('active');
-        
-        
-        $(this).closest('.menu').removeClass('menu-open');
-        $(this).closest('.select').removeClass('select-clicked');
-        $(this).closest('.select').find('.caret').removeClass('caret-rotate');
-    });
+}
 
-    
-    $('#popup_action2 .dropdown .select').click(function() {
-        $(this).toggleClass('select-clicked');
-        $(this).find('.caret').toggleClass('caret-rotate');
-        $(this).siblings('.menu').toggleClass('menu-open');
-    });
+function fillpopup_fahndung_person(){
+    $('#popup_action3').html(`
+        <div class="pop-fahndung-person">   
+            <div class="top-ticket">
+                <h4>Vorname</h4>
+                <input type="text" class="input-feld" placeholder="Vorname" />
+
+                <h4>Nachname</h4>
+                <input type="text" class="input-feld" placeholder="Nachname" />
+
+                <h4>Geschlecht</h4>
+                <select name="whishlist" class="selector" size="4">
+                        <option>Männlich</option>
+                        <option>Weiblich</option>
+                </select>
+
+
+                <h4>Fahndungsinformationen</h4>
+                <textarea type="text" class="text-feld" placeholder="Beschreiben Sie wofür der TV Fahndet wird"></textarea>
+
+
+                <button>Erstellen</button> 
+            </div>
+            
+        </div>
+    `)
+
+}
+
+function fillpopup_fahndung_andere(){
+    $('#popup_action3').html(`
+        <div class="pop-fahndung-andere">   
+            <div class="top-ticket">
+
+                <h4>Fahndungsinformationen</h4>
+                <textarea type="text" class="text-feld" placeholder="Beschreiben Sie genau um was es sich handelt"></textarea>
+
+
+                <button>Erstellen</button> 
+            </div>
+            
+        </div>
+    `)
+
 }
 
 

@@ -1819,7 +1819,7 @@ aside .sidebar-pop .message-count{
 
 .pop-fahndung-person .top-ticket{
     display: grid;
-    gap: 0.2vw;
+    gap: 0.1vw;
     width: 100%;
     height: 100px;
 }
@@ -1830,14 +1830,14 @@ aside .sidebar-pop .message-count{
 
 .pop-fahndung-person .top-ticket .input-feld{
     
-    height: 1.5vw;
+    height: 1.3vw;
     background-color: var(--color-background);
     border: solid var(--color-primary) 2px;
     border-radius: var(--border-radius-1);
     box-shadow: var(--box-shadow);
     font-size: 0.8vw;
     color: var(--color-dark); 
-    margin-bottom: 0.5vw; 
+    margin-bottom: 0.3vw; 
     padding-left: 5px;
 
 }
@@ -1897,7 +1897,7 @@ aside .sidebar-pop .message-count{
     cursor: pointer;
     text-transform: uppercase; 
     text-decoration: none;
-    margin-top: 0.7vw;
+    margin-top: 2.7vw;
     align-self: center;
     justify-self: center;
     width: 50%;
@@ -1911,9 +1911,160 @@ aside .sidebar-pop .message-count{
     color: var(--color-success);
     border: solid 2px var(--color-success);
 }
+/***************Fahndung fahrzeug ***************************/
+#popup_action3{
+    width: 100%;
+    height: 22vw;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+
+.pop-fahndung-fahrzeug .top-ticket{
+    display: grid;
+    gap: 0.1vw;
+    width: 100%;
+    height: 100px;
+    
+}
+
+
+    
+
+
+.pop-fahndung-fahrzeug .top-ticket .input-feld{
+    
+    height: 1.3vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0.3vw; 
+    padding-left: 5px;
+
+}
+
+.pop-fahndung-fahrzeug .top-ticket .text-feld{
+    
+    height: 3vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0.5vw; 
+    padding-left: 5px;
+
+}
+
+
+.pop-fahndung-fahrzeug .top-ticket button {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 0.2vw 1vw;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 0.5vw;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-top: 0.7vw;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+.pop-fahndung-fahrzeug .top-ticket button:hover {
+    transition : 613ms;
+    padding: 0.2vw 1vw;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
+
+
+/***************Fahndung andere ***************************/
+#popup_action3{
+    width: 100%;
+    height: 22vw;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+
+.pop-fahndung-andere .top-ticket{
+    display: grid;
+    gap: 0.1vw;
+    width: 100%;
+    height: 100px;
+    
+}
+
+
+.pop-fahndung-andere .top-ticket .text-feld{
+    
+    height: 15vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0.5vw; 
+    padding-left: 5px;
+
+}
+
+
+.pop-fahndung-andere .top-ticket button {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 0.2vw 1vw;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 0.5vw;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-top: 0.7vw;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+.pop-fahndung-andere .top-ticket button:hover {
+    transition : 613ms;
+    padding: 0.2vw 1vw;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
 
 
 /********************checkbox allgemein*****************/
+
+
 .checkbox-wrapper-13{
     display: flex;           /* Stellt sicher, dass die Checkbox und das Label inline-flex sind */
     align-items: center;
@@ -2015,3 +2166,145 @@ aside .sidebar-pop .message-count{
   .checkbox-wrapper-13 *:after {
     box-sizing: inherit;
   }
+
+
+  /************************Popup Fenster für Bericht*********************************/
+
+.popup-bericht {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw; 
+    height: 27vw; 
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    
+}
+
+.popup-content-bericht {
+    display: flex;
+    padding: var(--card-padding);
+    gap: 3vw;
+    font-size: 0.7vw;
+}
+
+
+
+.popup-content-bericht .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.popup-content-bericht .close:hover {
+    color: var(--color-danger);
+}
+
+
+
+.selector-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-toggle {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    border: solid var(--color-primary) 2px;
+    color: var(--color-dark);
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    border: solid var(--color-primary) 2px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 0.3vw;
+    cursor: pointer;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: var(--color-primary);
+}
+
+
+.dropdown-menu::-webkit-scrollbar {
+    width: 0.2vw;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+
+.dropdown-menu::-webkit-scrollbar-button:start,
+.dropdown-menu::-webkit-scrollbar-button:end {
+    display: block;
+    height: 0.1vw; 
+}
+
+
+.popup-content-bericht p{
+    margin-top: 1vw;
+    height: 14vw;
+    overflow-y: scroll;
+    margin-bottom: 3vw;
+}
+
+
+.popup-content-bericht p::-webkit-scrollbar {
+    width: 0.2vw;
+}
+
+.popup-content-bericht p::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+
+
+.popup-content-bericht p::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+
+.popup-content-bericht .selector{
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    font-family: poppins, sans-serif;
+}
+
