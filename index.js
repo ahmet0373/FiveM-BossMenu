@@ -756,7 +756,7 @@ function modal_fahndung(daten){
         
                     </aside>
                     
-                    <div id="popup_action2">
+                    <div id="popup_action3">
                         <!-- generated content -->
                     </div>
                     
@@ -876,7 +876,7 @@ function copyToClipboard(text) {
     document.body.removeChild(textarea);
 }
 
-// Popup für die Spieler
+// Popup für die mitarbeiter 
 
 function fillpopup_action(){
     $('#popup_action').html(`
@@ -913,6 +913,14 @@ function fillpopup_action(){
                     </div>
                 </div>
                 <div class="pop-mod2">
+                    <div class="checkbox-wrapper-13">
+                        <input id="c7-13" type="checkbox">
+                        <label for="c7-13">Checkbox</label>
+                    </div>
+                    <div class="checkbox-wrapper-13">
+                        <input id="c7-13" type="checkbox">
+                        <label for="c7-13">Checkbox</label>
+                    </div>
                     <div class="checkbox-wrapper-13">
                         <input id="c7-13" type="checkbox">
                         <label for="c7-13">Checkbox</label>
@@ -1512,7 +1520,7 @@ let toolbar = document.createElement('div');
 toolbar.innerHTML = '<h2>Spieler Liste</h2>';
 
 let TableSpieler = $('#spielerTable').DataTable({
-    pageLength: 9, 
+    pageLength: 12, 
     lengthChange: false,
     language: sprache,
     layout: {
@@ -1831,7 +1839,7 @@ function fillcon2_left_mitarbeiter() {
     toolbar.innerHTML = '<h2>Mitarbeiter Liste</h2>';
 
     let TableMitarbeiter = $('#mitarbeiterTable').DataTable({
-        pageLength: 9, 
+        pageLength: 12, 
         lengthChange: false,
         language: sprache,
         layout: {
@@ -2048,7 +2056,12 @@ function fillcon2_akte() {
             <div class="linksrechts">
                 <div class="links">
                     <p><b>Typ:</b> Ausweis</p>
-                    <p><b>Status:</b> auswählen</p>
+                    <p><b>Status:</b>   <select name="whishlist" class="selector">
+                                            <option>undefiniert</option>
+                                            <option>Suspendiert</option>
+                                            <option>Abgelaufen</option>
+                                        </select>
+                    </p>
                     <p><b>Ausgestellt:</b> 11/05/2024</p>
                     <p><b>Läuft ab:</b> 11/05/2024</p>               
                 </div>
@@ -2197,22 +2210,27 @@ function button5(type) {
 
 
 function fillpopup_fahndung_person(){
-    $('#popup_action2').html(`
+    $('#popup_action3').html(`
         <div class="pop-fahndung-person">   
             <div class="top-ticket">
+                <h3>Vorname</h3>
+                <input type="text" class="input-feld" placeholder="Vorname" />
 
-                <input type="text" class="input-feld" />
-                <input type="text" class="input-feld" />
-                <div class="dropdown">
-                    <div class="select">
-                        <span class="selected">Geschlecht</span>
-                        <div class="caret"></div>
-                    </div>
-                    <ul class="menu">
-                        <li class="active">Mänlich</li>
-                        <li>Weiblich</li>
-                    </ul>
-                </div>
+                <h3>Nachname</h3>
+                <input type="text" class="input-feld" placeholder="nachname" />
+
+                <h3>Geschlecht</h3>
+                <select name="whishlist" class="selector" size="4">
+                        <option>Männlich</option>
+                        <option>Weiblich</option>
+                </select>
+
+
+                <h3>Fahndungsinformationen</h3>
+                <textarea type="text" class="text-feld" placeholder="Beschreiben Sie wofür der TV Fahndet wird"></textarea>
+
+
+                <button>Erstellen</button> 
             </div>
             
         </div>
