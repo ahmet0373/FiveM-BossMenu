@@ -1012,15 +1012,15 @@ main .box-mitte-akte .header button:hover {
 /************************ticketss table*********************************/
 
 
-#ticketsTable {
+#waffenTable {
     margin: 0 auto; 
 }
 
-#ticketsTable th {
+#waffenTable th {
     text-align: center; 
 }
 
-#ticketsTable td {
+#waffenTable td {
     text-align: center; 
 }
 
@@ -2306,5 +2306,6 @@ aside .sidebar-pop .message-count{
     background-color: var(--color-white);
     color: var(--color-dark);
     font-family: poppins, sans-serif;
+    cursor: pointer;
 }
 

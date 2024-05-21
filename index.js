@@ -312,196 +312,240 @@ var autos = [
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
     },
     {
         "owner" : "Miha Nowotny",
         "kennzeichen" : "HSU373",
-        "herkunft" : "shop",
-        "status" : "ausgeparkt"
-    }
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
+    },
+    {
+        "owner" : "Miha Nowotny",
+        "kennzeichen" : "HSU373",
+        "modell" : "Felon",
+        "farbe" : "Black",
+        "status" : "nicht gestohlen"
+    },
 ]
 
-var tickets = [
+var Waffen = [
     
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Allgemein",
-        "status" : "offen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     },
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Fraktion",
-        "status" : "offen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     },
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Fraktion",
-        "status" : "offen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     },
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Fraktion",
-        "status" : "offen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     },
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Allgemein",
-        "status" : "geschlossen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     },
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Allgemein",
-        "status" : "geschlossen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     },
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Allgemein",
-        "status" : "offen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     },
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Allgemein",
-        "status" : "offen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     },
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Allgemein",
-        "status" : "offen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     },
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Allgemein",
-        "status" : "offen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     },
     {
         "name" : "Miha Nowotny",
-        "ticket_id" : "29398",
-        "id" : "23",
-        "zeit" : "vor 10 Minuten",
-        "kategorie" : "Allgemein",
-        "status" : "offen"
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "typ" : "Pistol",
+        "seriennummer" : "23SDF829395SD2",
+        "status" : "gestohlen"
     }
 ]
 var sprache  = {
@@ -1679,154 +1723,109 @@ TableSpieler.on("draw", function() {
 TableSpieler.draw();
 
 }
-function fillcon2_left_ticket() {
+function fillcon2_left_waffen() {
     $('#con2_left').html(`
     <div class="mitte-oben">
-        <div id="list" class="box1" onclick="button1('list')" href="#">
-            <span class="material-icons-sharp">groups</span>
-            <div class="middle">
-                <div class="lef">
-                    <h3>Spieler</h3>
-                    <h1>434</h1>
-                </div>
-                <div class="progress">
-                    <svg>
-                        <circle cx="38" cy="38" r="36"></circle>
-                    </svg>
-                    <div class="number">
-                        <p>51%</p>
-                    </div>
-                </div>
-            </div>
-            <small class="text-muted">Aktuell</small>
-        </div>
-        <!-------------------------Ende erste block---------------------------->
-        <div id="auto" class="box2" onclick="button1('autos')" href="#">
-            <span class="material-icons-sharp">directions_car</span>
-            <div class="middle">
-                <div class="lef">
-                    <h3>Fahrzeuge</h3>
-                    <h1>234</h1>
-                </div>
-                <div class="progress">
-                    <svg>
-                        <circle cx="38" cy="38" r="36"></circle>
-                    </svg>
-                    <div class="number">
-                        <p>51%</p>
-                    </div>
-                </div>
-            </div>
-            <small class="text-muted">Aktuell</small>
-        </div>
-        <!-------------------------Ende zweite block---------------------------->
-        <div id="ticket" class="box3" onclick="button1('tickets')" href="#">
-            <span class="material-icons-sharp">analytics</span>
-            <div class="middle">
-                <div class="lef">
-                    <h3>Tickets</h3>
-                    <div class="zahl">
-                        <h1>34</h1>
-                        <span class="message-count">34</span>
-                    </div>
-                </div>
-                <div class="progress">
-                    <svg>
-                        <circle cx="38" cy="38" r="36"></circle>
-                    </svg>
-                    <div class="number">
-                        <p>71%</p>
-                    </div>
-                </div>
-            </div>
-            <small class="text-muted">Aktuell</small>
-        </div>
+        
+        
+        
         <!-------------------------Ende dritter block---------------------------->
     </div>
 
     <!-------------------------Ende insight---------------------------->
     <div class="box-mitte">
         
-        <table id="ticketsTable" class="display" width="100%">
-    
+        <table id="waffenTable" class="display" width="100%">
         
+            
         </table>
         <!---<a href="#">Mehr Anzeigen</a>---->
     </div>
 `)
 
 let toolbar = document.createElement('div');
-toolbar.innerHTML = '<h2>Tickets</h2>';
+toolbar.innerHTML = '<h2>Waffen Liste</h2>';
 
-let TableTicket = $('#ticketsTable').DataTable({
-    pageLength: 9, 
+
+let TableWaffe = $('#waffenTable').DataTable({
+    pageLength: 12, 
     lengthChange: false,
     language: sprache,
     layout: {
         topStart: toolbar
     },
-    data : tickets,
+    data : Waffen,
     'columns' : [
-        {data : 'id'},
         {data : 'name'},
-        {data : 'ticket_id'},
-        {data : 'zeit'},
-        {data : 'kategorie'},
+        {data : 'typ'},
+        {data : 'seriennummer'},
         {data : 'status'},
-        {data : 'id'}
+        {data : 'name'},
+        {data : 'seriennummer'}
     ],
     columnDefs: [
         
         {
-            title: 'id',
+            title: 'Besitzer',
             targets: 0
         },
         {
-            title: 'name',
+            title: 'Waffentyp',
             targets: 1
         },
         {
-            title: 'ticket id',
+            title: 'Seriennummer',
             targets: 2
         },
         {
-            title: 'zeit',
+            title: 'Gestohlener Status',
             targets: 3
         },
         {
-            title: 'kategorie',
+            title: 'zu Bürger',
             targets: 4,
+            sortable: false
         },
         {
-            title: 'status',
+            title: 'Gestohlen',
             targets: 5,
-        },
-        {
-            title: '',
-            targets: 6,
             sortable: false
         }
     ]
 });
 
-TableTicket.on("draw", function() {
-    if (TableTicket.column(6).nodes()) {
-        TableTicket.column(6).nodes().each(function(cell, i) {
+TableWaffe.on("draw", function() {
+    if (TableWaffe.column(5).nodes()) {
+        TableWaffe.column(5).nodes().each(function(cell, i) {
             var taskid = $(cell).text().trim();
             $(cell).html(`
             
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16" onclick="modal_tickets('${taskid}')">
-                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
-                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
-                </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-binoculars-fill" viewBox="0 0 16 16">
+                <path d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5z"/>
+            </svg>
             
             `);
         });    
-    }    
+    } 
+    
+    if (TableWaffe.column(4).nodes()) {
+        TableWaffe.column(4).nodes().each(function(cell, i) {
+            var taskid = $(cell).text().trim();
+            $(cell).html(`
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" onclick="button1('namen')">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+            </svg>
+            
+            `);
+        });    
+    }
        
 })
 
-TableTicket.draw();
+TableWaffe.draw();
+
+
 
 
 
@@ -1855,6 +1854,9 @@ function fillcon2_left_auto() {
 let toolbar = document.createElement('div');
 toolbar.innerHTML = '<h2>Auto Liste</h2>';
 
+
+
+
 let TableAuto = $('#autosTable').DataTable({
     pageLength: 12, 
     lengthChange: false,
@@ -1866,14 +1868,16 @@ let TableAuto = $('#autosTable').DataTable({
     'columns' : [
         {data : 'owner'},
         {data : 'kennzeichen'},
-        {data : 'herkunft'},
+        {data : 'modell'},
+        {data : 'farbe'},
         {data : 'status'},
-        {data : 'kennzeichen'}
+        {data : 'kennzeichen'},
+        {data : 'owner'}
     ],
     columnDefs: [
         
         {
-            title: 'Owner',
+            title: 'Besitzer',
             targets: 0
         },
         {
@@ -1881,35 +1885,56 @@ let TableAuto = $('#autosTable').DataTable({
             targets: 1
         },
         {
-            title: 'Herkunft',
+            title: 'Modell',
             targets: 2
         },
         {
-            title: 'Status',
+            title: 'Farbe',
             targets: 3
         },
         {
-            title: '',
-            targets: 4,
+            title: 'Gestohlener Status',
+            targets: 4
+        },
+        {
+            title: 'zu Bürger',
+            targets: 5,
+            sortable: false
+        },
+        {
+            title: 'Gestohlen',
+            targets: 6,
             sortable: false
         }
     ]
 });
 
 TableAuto.on("draw", function() {
-    if (TableAuto.column(4).nodes()) {
-        TableAuto.column(4).nodes().each(function(cell, i) {
+    if (TableAuto.column(6).nodes()) {
+        TableAuto.column(6).nodes().each(function(cell, i) {
             var taskid = $(cell).text().trim();
             $(cell).html(`
             
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16" onclick="modal_autos('${taskid}')">
-                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
-                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
-                </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+            </svg>
             
             `);
         });    
-    }    
+    } 
+    
+    if (TableAuto.column(5).nodes()) {
+        TableAuto.column(5).nodes().each(function(cell, i) {
+            var taskid = $(cell).text().trim();
+            $(cell).html(`
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" onclick="button1('namen')">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+            </svg>
+            
+            `);
+        });    
+    }
        
 })
 
@@ -2134,8 +2159,8 @@ function fillcon2_akte() {
                     
                 </div>
                 <div class="pop-mod-button">
-                    <button>Fahrzeuge anzeigen</button>
-                    <button>Waffen anzeigen</button>     
+                    <button onclick="button1('kfz')">Fahrzeuge anzeigen</button>
+                    <button onclick="button1('waffe')">Waffen anzeigen</button>     
                 </div>
                 <div class="pop-mod-button">
                     <button onclick="modal_fahndung('')">Fahndung erstellen</button>
@@ -2266,7 +2291,7 @@ function button1(type) {
         $('.menuselect').removeClass('active');
         $('#kfz').addClass('active');
     } else if (type == "waffe"){
-        fillcon2_left_ticket()
+        fillcon2_left_waffen()
         $('#con2_right').css("display","none")
         $('.menuselect').removeClass('active');
         $('#waffe').addClass('active');
