@@ -133,7 +133,7 @@ var spieler = [
         }
 ]
 
-var mitarbeiter= [
+var mitarbeiter = [
     
     {
         "vorname" : "Miha",
@@ -305,6 +305,145 @@ var mitarbeiter= [
         "nummer" : "1929210",
         "status" : "online",
         "id" : "31"
+    }
+]
+
+var fahndung = [
+    
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
+    },
+    {
+        "name" : "Miha Nowotny",
+        "fahndung_id" : "42345",
+        "geschlecht" : "mennlich",
+        "kennzeichen" : "HUE832",
+        "farbe" : "blau",
+        "modell" : "Jugular",
+        "typ" : "Personen"
     }
 ]
 
@@ -2029,6 +2168,94 @@ function fillcon2_left_mitarbeiter() {
 
 }
 
+function fillcon2_left_fahndung() {
+    $('#con2_left').html(`
+    
+    <!-------------------------Ende insight---------------------------->
+    <div class="box-mitte">
+        
+        <table id="mitarbeiterTable" class="display" width="100%">
+        
+            
+        </table>
+        <!---<a href="#">Mehr Anzeigen</a>---->
+    </div>
+    `)
+   
+    
+
+    let toolbar = document.createElement('div');
+    toolbar.innerHTML = '<h2>Fahndungen</h2>';
+
+    let TableFahndung = $('#mitarbeiterTable').DataTable({
+        pageLength: 12, 
+        lengthChange: false,
+        language: sprache,
+        layout: {
+            topStart: toolbar
+        },
+        data : fahndung,
+        'columns' : [
+            {data : 'name'},
+            {data : 'geschlecht'},
+            {data : 'kennzeichen'},
+            {data : 'farbe'},
+            {data : 'modell'},
+            {data : 'typ'},
+            {data : 'fahndung_id'},
+        ],
+        columnDefs: [
+            
+            {
+                title: 'Name',
+                targets: 0
+            },
+            {
+                title: 'Geschlecht',
+                targets: 1
+            },
+            {
+                title: 'Kennzeichen',
+                targets: 2
+            },
+            {
+                title: 'Farbe',
+                targets: 3
+            },
+            {
+                title: 'Modell',
+                targets: 4
+            },
+            {
+                title: 'Typ',
+                targets: 5
+            },
+            {
+                title: '',
+                targets: 6,
+                sortable: false
+            }
+        ]
+    });
+
+    TableFahndung.on("draw", function() {
+        if (TableFahndung.column(6).nodes()) {
+            TableFahndung.column(6).nodes().each(function(cell, i) {
+                var taskid = $(cell).text().trim();
+                $(cell).html(`
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16" onclick="modal_mitarbeiter('${taskid}')">
+                        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+                    </svg>        
+                `);
+            });    
+        }    
+        
+    })
+
+    TableFahndung.draw();
+
+}
+
 function fillcon2_right() {
     $('#con2_right').html(`
         <div class="top">
@@ -2295,6 +2522,11 @@ function button1(type) {
         $('#con2_right').css("display","none")
         $('.menuselect').removeClass('active');
         $('#waffe').addClass('active');
+    } else if (type == "fahndung"){
+        fillcon2_left_fahndung()
+        $('#con2_right').css("display","none")
+        $('.menuselect').removeClass('active');
+        $('#fahndung').addClass('active');
     } else if (type == "mitarbeiter"){
         fillcon2_left_mitarbeiter()
         $('#con2_right').css("display","none")
