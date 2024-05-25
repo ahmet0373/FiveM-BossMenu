@@ -1023,7 +1023,33 @@ main .box-mitte-akte .header button:hover {
 #waffenTable td {
     text-align: center; 
 }
+.button-table {
+    font-family: poppins, sans-serif;
+    font-weight: 800;
+    font-size: 0.4vw;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 0.1vw 1vw;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 0.5vw;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    
+    text-decoration: none;
+    margin-top: 0.2vw;
+    width: 100%;
+}
 
+.button-table:hover {
+    transition : 613ms;
+    padding: 0.2vw 1vw;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
 /************************mitarbeitertable*********************************/
 
 
@@ -2185,7 +2211,7 @@ aside .sidebar-pop .message-count{
 }
 
 .popup-content-bericht {
-    display: flex;
+    display: grid;
     padding: var(--card-padding);
     gap: 3vw;
     font-size: 0.7vw;
@@ -2309,3 +2335,33 @@ aside .sidebar-pop .message-count{
     cursor: pointer;
 }
 
+
+.popup-content-bericht .erstellen{
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 0.2vw 1vw;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 0.5vw;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-top: -2.5vw;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+.popup-content-bericht .erstellen:hover {
+    transition : 613ms;
+    padding: 0.2vw 1vw;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}

@@ -1010,8 +1010,12 @@ function modal_bericht(daten){
                                         </select>
                     </a>
 
-                    <b>6 monate Haft</b>
+                    <b class="monat">6 monate Haft</b>
+                    
+                    
                 </div>
+
+                <button class="erstellen" >Erstellen</button> 
                     
                     
             </div>
@@ -1535,39 +1539,6 @@ function fillpopup_ticket_info(){
     });
 }
 
-function fillpopup_ticket_action(){
-    $('#popup_action2').html(`
-        <div class="pop-info">      
-            <h2>Spieler Aktionen</h2>
-            <h3>Moderation</h3>
-            <div class="pop-mod">
-                <button class="pop-button">DM</button>
-                <button class="pop-button">WARN</button>
-                <button class="pop-button">KICK</button>
-                <button class="pop-button">GIVE ADMIN</button>
-            </div>
-            <h3>Interaction</h3>
-            <div class="pop-mod">
-                <button class="pop-button">heal</button>
-                <button class="pop-button">GO TO</button>
-                <button class="pop-button">bring</button>
-                <button class="pop-button">spectate</button>
-                <button class="pop-button">toggle freeze</button>
-            </div>
-            <h3>Support</h3>
-            <div class="pop-mod">
-                <button class="pop-button">Screenshot anzeigen</button>
-                <button class="pop-button">Show Inventory</button>
-                <button class="pop-button">Show Bank Account</button>
-            </div>
-            <h3>Ticket</h3>
-            <div class="pop-mod">
-                <button class="pop-button">Ticket Abschließen</button>
-                <button class="pop-button">Ticket Löschen</button>
-            </div>
-        </div>
-    `)
-}
 
 function fillpopup_ticket_ids(){
     $('#popup_action2').html(`
@@ -1939,9 +1910,7 @@ TableWaffe.on("draw", function() {
             var taskid = $(cell).text().trim();
             $(cell).html(`
             
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-binoculars-fill" viewBox="0 0 16 16">
-                <path d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5z"/>
-            </svg>
+            <button class="button-table">Gestohlen melden</button>
             
             `);
         });    
@@ -1952,9 +1921,7 @@ TableWaffe.on("draw", function() {
             var taskid = $(cell).text().trim();
             $(cell).html(`
             
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" onclick="button1('namen')">
-                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-            </svg>
+            <button class="button-table">Bürger Ansehen</button>
             
             `);
         });    
@@ -2243,7 +2210,7 @@ function fillcon2_left_fahndung() {
             TableFahndung.column(6).nodes().each(function(cell, i) {
                 var taskid = $(cell).text().trim();
                 $(cell).html(`
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16" onclick="modal_mitarbeiter('${taskid}')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16" onclick="modal_fahndung('${taskid}')">
                         <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
                     </svg>        
                 `);
