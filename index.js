@@ -133,6 +133,170 @@ var spieler = [
         }
 ]
 
+var berichte = [
+    
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    },
+    {
+        "titel" : "Casino Schießerei",
+        "aktenzeichen" : "653425",
+        "ort" : "Casino",
+        "datum" : "17/10/2003",
+        "status" : "In Arbeit",
+        "typ" : "Einsatzbericht"
+    }
+]
+
 var mitarbeiter = [
     
     {
@@ -1910,8 +2074,8 @@ TableWaffe.on("draw", function() {
             var taskid = $(cell).text().trim();
             $(cell).html(`
             
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" onclick="button1('namen')">
-                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-binoculars-fill" viewBox="0 0 16 16">
+                <path d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5z"/>
             </svg>
             
             `);
@@ -2470,6 +2634,244 @@ function fillcon2_akte() {
 
 
 }
+
+
+// berichte
+
+function fillcon2_left_bericht() {
+    $('#con2_left').html(`
+    
+    <!-------------------------Ende insight---------------------------->
+    <div class="box-mitte">
+        
+        <table id="berichteTable" class="display" width="100%">
+        
+            
+        </table>
+        <!---<a href="#">Mehr Anzeigen</a>---->
+    </div>
+`)
+
+
+
+let toolbar = document.createElement('div');
+toolbar.innerHTML = '<div class="berichttitel"><h2>Berichte Liste</h2>   <button class="pop-button">Einsatzbericht Erstellen</button>   <button class="pop-button">Ermittlung Erstellen</button></div>';
+
+let TableBerichte = $('#berichteTable').DataTable({
+    pageLength: 12, 
+    lengthChange: false,
+    language: sprache,
+    layout: {
+        topStart: toolbar
+    },
+    data : berichte,
+    'columns' : [
+        {data : 'titel'},
+        {data : 'aktenzeichen'},
+        {data : 'ort'},
+        {data : 'datum'},
+        {data : 'status'},
+        {data : 'typ'},
+        {data : 'aktenzeichen'}
+    ],
+    columnDefs: [
+        
+        {
+            title: 'Titel',
+            targets: 0
+        },
+        {
+            title: 'Aktenzeichen',
+            targets: 1
+        },
+        {
+            title: 'Ort',
+            targets: 2
+        },
+        {
+            title: 'Datum',
+            targets: 3
+        },
+        {
+            title: 'Status',
+            targets: 4
+        },
+        {
+            title: 'typ',
+            targets: 5
+        },
+        {
+            title: '',
+            targets: 6,
+            sortable: false
+        }
+    ]
+});
+
+TableBerichte.on("draw", function() {
+    if (TableBerichte.column(6).nodes()) {
+        TableBerichte.column(6).nodes().each(function(cell, i) {
+            var taskid = $(cell).text().trim();
+            $(cell).html(`
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16" onclick="button6('bericht_info')">
+                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1m0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1"/>
+                </svg>        
+            `);
+        });    
+    }    
+       
+})
+
+TableBerichte.draw();
+
+}
+
+function fillcon2_bericht_info() {
+    $('#con2_left').html(`
+        <div class="mitte-oben">
+            <div id="list" class="box1-bericht">      
+                    <span class="back material-icons-sharp">arrow_back_ios</span>
+                
+                <div class="bericht-info">
+                    <p><b>Titel:</b> Casino Schießerei</p>
+                    <p><b>Ort:</b> Casino Parkplatz</p>
+                    <p><b>Datum:</b> 28/05/2024 - 18:32</p>
+                    <p><b>Typ:</b> Einsatzbericht</p>
+                </div>
+
+                <div class="middle">
+                    
+                    <img src="./images/user.png">
+                    
+
+                    
+                </div>
+                
+                
+            </div>
+            <!-------------------------Ende erste block---------------------------->
+            <div id="auto" class="box2" href="#">
+                
+                <div class="middle">
+                    <span class="material-icons-sharp">manage_accounts</span>
+                    <h2>Aktionen</2> 
+
+                    
+                </div>
+                <div class="pop-mod-button">
+                    <button>Hinzufügen</button>
+                    <button>Speichern</button>     
+                </div>
+                <div class="pop-mod-button">
+                    <button>Eintrag erstellen</button>
+                    <button>Bericht Abschließen</button>     
+                </div>
+            </div>
+            <!-------------------------Ende zweite block---------------------------->
+            
+        </div>
+
+        <!-------------------------Ende insight---------------------------->
+        <div class="box-mitte-bericht">
+            
+
+            <div class="linksrechts">
+                <div class="links">
+                    <p><b>Typ:</b> Ausweis</p>
+                    <p><b>Status:</b>   <select name="whishlist" class="selector">
+                                            <option>undefiniert</option>
+                                            <option>Suspendiert</option>
+                                            <option>Abgelaufen</option>
+                                        </select>
+                    </p>
+                    <p><b>Ausgestellt:</b> 11/05/2024</p>
+                    <p><b>Läuft ab:</b> 11/05/2024</p>               
+                </div>
+
+                <div class="mitte">
+                    <h3>Eigenschaften: </h3>
+                    
+       
+                </div>
+                <div class="rechts">
+                    <textarea rows="6" cols="50" style="width: 100%;" placeholder="Notizen eingeben"></textarea>
+
+                
+                </div>
+            </div>
+            <div class="header">
+                <h2>Aufzeihnungen</h2>
+                <button>Speichern</button>
+            </div>
+            <div class="unten">  
+                <div class="einträge">
+                    <ul class="eintrag">
+                        <li class="einzel">
+                            <div class="zeile1">
+                                <b>Failure to yield to an emergency vehicle:</b>
+                                <p class="danger">Verstoß</p>
+                            </div>
+                            <div class="zeile2">
+                                <p><b>Datum:</b> 12/05/2024</p>
+                                <p><b>Strafe:</b> 500$</p>
+                            </div>
+                        </li>
+                    </ul> 
+                    <ul class="eintrag">
+                        <li class="einzel">
+                            <div class="zeile1">
+                                <b>Failure to yield to an emergency vehicle:</b>
+                                <p class="danger">Verstoß</p>
+                            </div>
+                            <div class="zeile2">
+                                <p><b>Datum:</b> 12/05/2024</p>
+                                <p><b>Strafe:</b> 500$</p>
+                            </div>
+                        </li>
+                    </ul> 
+                    <ul class="eintrag">
+                        <li class="einzel">
+                            <div class="zeile1">
+                                <b>Failure to yield to an emergency vehicle:</b>
+                                <p class="danger">Verstoß</p>
+                            </div>
+                            <div class="zeile2">
+                                <p><b>Datum:</b> 12/05/2024</p>
+                                <p><b>Strafe:</b> 500$</p>
+                            </div>
+                        </li>
+                    </ul> 
+                    <ul class="eintrag">
+                        <li class="einzel">
+                            <div class="zeile1">
+                                <b>Failure to yield to an emergency vehicle:</b>
+                                <p class="danger">Verstoß</p>
+                            </div>
+                            <div class="zeile2">
+                                <p><b>Datum:</b> 12/05/2024</p>
+                                <p><b>Strafe:</b> 500$</p>
+                            </div>
+                        </li>
+                    </ul> 
+
+                    
+                </div>
+
+            </div>
+
+            
+        </div>
+    `)
+
+
+    $('.back').click(function() {
+        fillcon2_left_bericht()
+        $('#con2_right').css("display","none")
+    });
+
+
+
+}
 // nav buttons
 function button1(type) {
 
@@ -2503,6 +2905,11 @@ function button1(type) {
         $('#con2_right').css("display","none")
         $('.menuselect').removeClass('active');
         $('#mitarbeiter').addClass('active');
+    } else if (type == "berichte"){
+        fillcon2_left_bericht()
+        $('#con2_right').css("display","none")
+        $('.menuselect').removeClass('active');
+        $('#berichte').addClass('active');
     }
 }
 
@@ -2510,7 +2917,10 @@ function button6(type){
     if (type == "akte"){
         fillcon2_akte()
         $('#con2_right').css("display","none")
-    }
+    } else if (type == "bericht_info"){
+        fillcon2_bericht_info()
+        $('#con2_right').css("display","none")
+    } 
 }
 
 // fahndungen erstellen popup button

@@ -851,6 +851,224 @@ main .box-mitte-akte .header button:hover {
     border: solid 2px var(--color-primary);
 }
 /*--------------------------akte ende--------------------------*/
+/************************bericht INfo*********************************/
+main .mitte-oben .box1-bericht {
+    display: flex;
+    width: 50%;
+    gap: 20px;
+}
+
+main .mitte-oben .box1-bericht  span{
+   
+    position: relative;
+    left: -1vw;
+    top: -1vw;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    color: var(--color-dark);
+    cursor: pointer;
+    
+}
+
+main .mitte-oben .box1-bericht .middle img{
+    position: relative;
+    justify-self: right;
+    width: 128px;
+    height: 128px;
+}
+main .mitte-oben .box1-bericht .bericht-info{
+    display: grid;
+    gap: 10px;
+    width: 18vw;
+}
+main .box-mitte-bericht{
+    display: grid;
+}
+
+main .box-mitte-bericht .linksrechts{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+main .box-mitte-bericht .links{
+    display: grid;
+    gap: 5px;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    width: 28%;
+}
+
+main .box-mitte-bericht .links .selector{
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    font-family: poppins, sans-serif;
+}
+
+main .box-mitte-bericht .mitte{
+    
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    width: 40%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+main .box-mitte-bericht .mitte::-webkit-scrollbar {
+    width: 2px;
+}
+
+main .box-mitte-bericht .mitte::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+main .box-mitte-bericht .mitte::-webkit-scrollbar-button:start,
+main .box-mitte-bericht .mitte::-webkit-scrollbar-button:end {
+    display: block;
+    height: 10px; 
+}
+
+main .box-mitte-bericht .mitte::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+
+
+main .box-mitte-bericht .rechts{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    width: 40%;
+    overflow-y: hidden;
+}
+
+main .box-mitte-bericht .rechts textarea{
+    
+    background: var(--color-white);
+    color: var(--color-dark);
+    height: 100%;
+    font-family: poppins, sans-serif;
+}
+
+main .box-mitte-bericht .rechts textarea::placeholder{
+    color: var(--color-dark);
+    font-family: poppins, sans-serif;
+    
+}
+
+
+main .box-mitte-bericht .rechts textarea::-webkit-scrollbar {
+    width: 0.2vw;
+}
+
+main .box-mitte-bericht .rechts textarea::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+
+
+main .box-mitte-bericht .rechts textarea::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+
+main .box-mitte-bericht .unten{
+    margin-top: 20px;
+    width: 100%;
+    
+}
+
+
+main .box-mitte-bericht .unten .einträge{
+    display: grid;
+    gap: 0.5vw;
+    height: 11vw;
+    overflow-y: auto;
+
+}
+main .box-mitte-bericht .unten .einträge .eintrag .einzel{
+    display: grid;
+    gap: 1vwpx;
+}
+main .box-mitte-bericht .unten .einträge .eintrag .einzel .zeile1{
+    
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: 1vw;
+}
+main .box-mitte-bericht .unten .einträge .eintrag .einzel .zeile2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+
+
+main .box-mitte-bericht .unten .einträge .eintrag{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    height: 6vw;
+    
+}
+
+main .box-mitte-bericht .unten .einträge::-webkit-scrollbar {
+    width: 0.2vw;
+}
+
+main .box-mitte-bericht .unten .einträge::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+
+
+main .box-mitte-bericht .unten .einträge::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+
+
+
+main .box-mitte-bericht .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+
+
+main .box-mitte-bericht .header button{
+    display: flex;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-success);
+    background: transparent;
+    padding: 5px 15px;
+    border: solid var(--color-success) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 8px;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-right: 110px;    
+}
+
+
+main .box-mitte-bericht .header button:hover {
+    transition : 613ms;
+    padding: 5px 15px;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-primary);
+    border: solid 2px var(--color-primary);
+}
 
 .right{
     width: 30%;
@@ -1066,7 +1284,54 @@ main .box-mitte-akte .header button:hover {
 }
 
 
+/************************berichte table*********************************/
 
+
+#berichteTable {
+    margin: 0 auto; 
+}
+
+#berichteTable th {
+    text-align: center; 
+}
+
+#berichteTable td {
+    text-align: center; 
+}
+
+.berichttitel{
+    display: flex;
+}
+
+
+.berichttitel button {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 0.7vw;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 5px 15px;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 8px;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    top: 7vw;
+    height: 2vw;
+    margin-left: 1vw;
+}
+
+.berichttitel button:hover {
+    transition : 613ms;
+    padding: 5px 15px;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
 
 /************************Popup Fenster*********************************/
 
