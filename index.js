@@ -1214,6 +1214,7 @@ function modal_bericht(daten){
     });
 }
 
+
 function toggleDropdown() {
     const dropdownMenu = document.querySelector('.dropdown-menu');
     dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
@@ -2655,7 +2656,7 @@ function fillcon2_left_bericht() {
 
 
 let toolbar = document.createElement('div');
-toolbar.innerHTML = '<div class="berichttitel"><h2>Berichte Liste</h2>   <button class="pop-button">Einsatzbericht Erstellen</button>   <button class="pop-button">Ermittlung Erstellen</button></div>';
+toolbar.innerHTML = '<div class="berichttitel"><h2>Berichte Liste</h2> <button onclick="modal_bericht" class="pop-button">Bericht Erstellen</button></div>';
 
 let TableBerichte = $('#berichteTable').DataTable({
     pageLength: 12, 
@@ -2777,19 +2778,58 @@ function fillcon2_bericht_info() {
 
             <div class="linksrechts">
                 <div class="links">
-                    <p><b>Typ:</b> Ausweis</p>
-                    <p><b>Status:</b>   <select name="whishlist" class="selector">
-                                            <option>undefiniert</option>
-                                            <option>Suspendiert</option>
-                                            <option>Abgelaufen</option>
-                                        </select>
-                    </p>
-                    <p><b>Ausgestellt:</b> 11/05/2024</p>
-                    <p><b>Läuft ab:</b> 11/05/2024</p>               
+                    <div class="spieler">
+                        <p>Miha Nowotny<p>
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="spieler">
+                        <p>Miha Nowotny<p>
+                        <span class="material-icons-sharp">person</span>
+                    </div> 
+                    <div class="spieler">
+                        <p>Miha Nowotny<p>
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="spieler">
+                        <p>Miha Nowotny<p>
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="spieler">
+                        <p>Miha Nowotny<p>
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="spieler">
+                        <p>Miha Nowotny<p>
+                        <span class="material-icons-sharp">person</span>
+                    </div> 
+                                   
                 </div>
 
                 <div class="mitte">
-                    <h3>Eigenschaften: </h3>
+                    <div class="autos">
+                        <p>JKS834<p>
+                        <span class="material-icons-sharp">directions_car</span>
+                    </div>
+                    <div class="autos">
+                        <p>JKS834<p>
+                        <span class="material-icons-sharp">directions_car</span>
+                    </div>
+                    <div class="autos">
+                        <p>JKS834<p>
+                        <span class="material-icons-sharp">directions_car</span>
+                    </div>
+                    <div class="autos">
+                        <p>JKS834<p>
+                        <span class="material-icons-sharp">directions_car</span>
+                    </div>
+                    <div class="autos">
+                        <p>JKS834<p>
+                        <span class="material-icons-sharp">directions_car</span>
+                    </div>
+                    <div class="autos">
+                        <p>JKS834<p>
+                        <span class="material-icons-sharp">directions_car</span>
+                    </div> 
                     
        
                 </div>
@@ -2801,7 +2841,7 @@ function fillcon2_bericht_info() {
             </div>
             <div class="header">
                 <h2>Aufzeihnungen</h2>
-                <button>Speichern</button>
+                
             </div>
             <div class="unten">  
                 <div class="einträge">

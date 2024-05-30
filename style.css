@@ -894,31 +894,81 @@ main .box-mitte-bericht .linksrechts{
 
 main .box-mitte-bericht .links{
     display: grid;
-    gap: 5px;
+    gap: 0.5vw;
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
-    width: 28%;
+    width: 33%;
+    height: 10.5vw;
+    overflow-y: scroll;
+}
+main .box-mitte-bericht .links .spieler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    box-shadow: 0 0.5vw 1vw var(--color-light);
+    border-radius: var(--card-border-radius);
+    height: 1.5vw;
+}
+main .box-mitte-bericht .links .spieler span{
+    cursor: pointer;
+    align-items: center;
 }
 
-main .box-mitte-bericht .links .selector{
-    background-color: var(--color-white);
-    color: var(--color-dark);
-    font-family: poppins, sans-serif;
+main .box-mitte-bericht .links::-webkit-scrollbar {
+    width: 0.2vw;
 }
+
+main .box-mitte-bericht .links::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+main .box-mitte-bericht .links::-webkit-scrollbar-button:start,
+main .box-mitte-bericht .links::-webkit-scrollbar-button:end {
+    display: block;
+    height: 0.8vw; 
+}
+
+main .box-mitte-bericht .links::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+
+
 
 main .box-mitte-bericht .mitte{
-    
+    display: grid;
+    gap: 0.5vw;
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
-    width: 40%;
-    height: 100%;
-    overflow-y: auto;
+    width: 33%;
+    height: 10.5vw;
+    overflow-y: scroll;
+}
+main .box-mitte-bericht .mitte .autos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    box-shadow: 0 0.5vw 1vw var(--color-light);
+    border-radius: var(--card-border-radius);
+    height: 1.5vw;
+}
+
+main .box-mitte-bericht .mitte .autos span{
+    cursor: pointer;
+    align-items: center;
+}
+
+main .box-mitte-bericht .links .autos span{
+    cursor: pointer;
+    align-items: center;
 }
 
 main .box-mitte-bericht .mitte::-webkit-scrollbar {
-    width: 2px;
+    width: 0.2vw;
 }
 
 main .box-mitte-bericht .mitte::-webkit-scrollbar-track {
@@ -928,7 +978,7 @@ main .box-mitte-bericht .mitte::-webkit-scrollbar-track {
 main .box-mitte-bericht .mitte::-webkit-scrollbar-button:start,
 main .box-mitte-bericht .mitte::-webkit-scrollbar-button:end {
     display: block;
-    height: 10px; 
+    height: 0.8vw;  
 }
 
 main .box-mitte-bericht .mitte::-webkit-scrollbar-thumb {
@@ -941,7 +991,7 @@ main .box-mitte-bericht .rechts{
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
-    width: 40%;
+    width: 33%;
     overflow-y: hidden;
 }
 
