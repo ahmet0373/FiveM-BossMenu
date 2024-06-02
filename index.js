@@ -1214,6 +1214,166 @@ function modal_bericht(daten){
     });
 }
 
+// Popup fenster für die einsatzbericht und ermitlung erstellung
+function modal_ermittlung(daten){
+    var blur = $('#main_hud');
+    blur.addClass('blur');
+
+    var popupContent = `
+        <div class="popup-ermittlung">
+        <span class="close material-icons-sharp">close</span>
+            <div class="pop-ermittlung">   
+                <div class="top-ticket">
+                    <h4>Titel</h4>
+                    <input type="text" class="input-feld" placeholder="Titel kurz halten" />
+
+                    <h4>Ort</h4>
+                    <input type="text" class="input-feld" placeholder="Ort des geschehen" />
+
+                    <h4>Typ des Berichtes</h4>
+                    <select name="whishlist" class="selector" size="4">
+                            <option>Einsatzbericht</option>
+                            <option>Emittlung</option>
+                    </select>
+
+
+                    <h4>Fahndungsinformationen</h4>
+                    <textarea type="text" class="text-feld" placeholder="Beschreiben Sie worum es geht."></textarea>
+
+
+                    <button>Erstellen</button> 
+                </div>
+            
+            </div>
+            
+        </div>
+    `;
+    
+    
+    $('body').append(popupContent); 
+
+    button5("person");
+
+    $(document).mouseup(function(e) {
+        var popup = $('.popup-ermittlung');
+        if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+            $('.popup-ermittlung').remove();
+            blur.removeClass('blur');
+        }
+    });
+    
+    $('.close').click(function() {
+        $('.popup-ermittlung').remove();
+        blur.removeClass('blur');
+    });
+}
+
+function modal_hinzufügen(daten){
+    var blur = $('#main_hud');
+    blur.addClass('blur');
+
+    var popupContent = `
+        <div class="popup-hinzufügen">
+            <span class="close material-icons-sharp">close</span>
+            <div class="pop-hinzufügen">   
+                <div class="top-ticket">
+                    <h4>Vorname</h4>
+                    <input type="text" class="input-feld" placeholder="Vorname des TV's" />
+
+                    <h4>Nachname</h4>
+                    <input type="text" class="input-feld" placeholder="Nachname des TV's" />
+
+                    <h4>Kennzeichen</h4>
+                    <input type="text" class="input-feld" placeholder="Kennzeichen des beteiligten Fahrzeuges" />
+
+                  
+                    
+
+
+                    <button>Hinzufügen</button> 
+                </div>
+            
+            </div>
+            
+        </div>
+    `;
+    
+    
+    $('body').append(popupContent); 
+
+    button5("person");
+
+    $(document).mouseup(function(e) {
+        var popup = $('.popup-hinzufügen');
+        var blur = $('.blur'); 
+    
+        
+        if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+            popup.remove(); 
+            blur.removeClass('blur'); 
+        }
+    });
+    
+    $('.close').click(function() {
+        var popup = $('.popup-hinzufügen');
+        var blur = $('.blur'); 
+    
+        popup.remove(); 
+        blur.removeClass('blur'); 
+    });
+}
+
+function modal_eintrag(daten){
+    var blur = $('#main_hud');
+    blur.addClass('blur');
+
+    var popupContent = `
+        <div class="popup-eintrag">
+        <span class="close material-icons-sharp">close</span>
+            <div class="pop-eintrag">   
+                <div class="top-ticket">
+                    <h4>Titel</h4>
+                    <input type="text" class="input-feld" placeholder="Schreiben sie einen kurzen Titel" />
+
+
+                    <h4>Text</h4>
+                    <textarea type="text" class="text-feld" placeholder="Beschreiben Sie was geschehen ist."></textarea>
+                  
+                    
+
+
+                    <button>Hinzufügen</button> 
+                </div>
+            
+            </div>
+            
+        </div>
+    `;
+    
+    
+    $('body').append(popupContent); 
+
+    button5("person");
+
+    $(document).mouseup(function(e) {
+        var popup = $('.popup-eintrag');
+        var blur = $('.blur'); 
+    
+        
+        if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+            popup.remove(); 
+            blur.removeClass('blur'); 
+        }
+    });
+    
+    $('.close').click(function() {
+        var popup = $('.popup-eintrag');
+        var blur = $('.blur'); 
+    
+        popup.remove(); 
+        blur.removeClass('blur'); 
+    });
+}
 
 function toggleDropdown() {
     const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -1400,6 +1560,7 @@ function fillpopup_action(){
                     </ul>
                 </div>
             </div>
+            <button class="pop-button-save">Speichern</button>
             
         </div>
     `)
@@ -2656,7 +2817,7 @@ function fillcon2_left_bericht() {
 
 
 let toolbar = document.createElement('div');
-toolbar.innerHTML = '<div class="berichttitel"><h2>Berichte Liste</h2> <button onclick="modal_bericht" class="pop-button">Bericht Erstellen</button></div>';
+toolbar.innerHTML = '<div class="berichttitel"><h2>Berichte Liste</h2> <button onclick="modal_ermittlung()" class="pop-button">Bericht Erstellen</button></div>';
 
 let TableBerichte = $('#berichteTable').DataTable({
     pageLength: 12, 
@@ -2760,11 +2921,11 @@ function fillcon2_bericht_info() {
                     
                 </div>
                 <div class="pop-mod-button">
-                    <button>Hinzufügen</button>
+                    <button onclick="modal_hinzufügen()">Hinzufügen</button>
                     <button>Speichern</button>     
                 </div>
                 <div class="pop-mod-button">
-                    <button>Eintrag erstellen</button>
+                    <button onclick="modal_eintrag()">Eintrag erstellen</button>
                     <button>Bericht Abschließen</button>     
                 </div>
             </div>
@@ -2848,48 +3009,48 @@ function fillcon2_bericht_info() {
                     <ul class="eintrag">
                         <li class="einzel">
                             <div class="zeile1">
-                                <b>Failure to yield to an emergency vehicle:</b>
-                                <p class="danger">Verstoß</p>
+                                <b>Titel</b>
+                                <p class="danger">Miha Nowotny PD03</p>
                             </div>
                             <div class="zeile2">
-                                <p><b>Datum:</b> 12/05/2024</p>
-                                <p><b>Strafe:</b> 500$</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                                <b>12/05/2024 - 18:43</b> 
                             </div>
                         </li>
                     </ul> 
                     <ul class="eintrag">
                         <li class="einzel">
                             <div class="zeile1">
-                                <b>Failure to yield to an emergency vehicle:</b>
-                                <p class="danger">Verstoß</p>
+                                <b>Titel</b>
+                                <p class="danger">Miha Nowotny PD03</p>
                             </div>
                             <div class="zeile2">
-                                <p><b>Datum:</b> 12/05/2024</p>
-                                <p><b>Strafe:</b> 500$</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                                <b>12/05/2024 - 18:43</b> 
                             </div>
                         </li>
                     </ul> 
                     <ul class="eintrag">
                         <li class="einzel">
                             <div class="zeile1">
-                                <b>Failure to yield to an emergency vehicle:</b>
-                                <p class="danger">Verstoß</p>
+                                <b>Titel</b>
+                                <p class="danger">Miha Nowotny PD03</p>
                             </div>
                             <div class="zeile2">
-                                <p><b>Datum:</b> 12/05/2024</p>
-                                <p><b>Strafe:</b> 500$</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                                <b>12/05/2024 - 18:43</b> 
                             </div>
                         </li>
-                    </ul> 
+                    </ul>
                     <ul class="eintrag">
                         <li class="einzel">
                             <div class="zeile1">
-                                <b>Failure to yield to an emergency vehicle:</b>
-                                <p class="danger">Verstoß</p>
+                                <b>Titel</b>
+                                <p class="danger">Miha Nowotny PD03</p>
                             </div>
                             <div class="zeile2">
-                                <p><b>Datum:</b> 12/05/2024</p>
-                                <p><b>Strafe:</b> 500$</p>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                                <b>12/05/2024 - 18:43</b> 
                             </div>
                         </li>
                     </ul> 

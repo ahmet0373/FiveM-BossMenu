@@ -74,6 +74,7 @@ body {
     user-select: none;
     overflow-x: hidden;
     color: var(--color-dark);
+    overflow-y: hidden;
 }
 
 #main_hud {
@@ -1041,7 +1042,7 @@ main .box-mitte-bericht .unten .einträge{
 }
 main .box-mitte-bericht .unten .einträge .eintrag .einzel{
     display: grid;
-    gap: 1vwpx;
+    gap: 0.2vw;
 }
 main .box-mitte-bericht .unten .einträge .eintrag .einzel .zeile1{
     
@@ -1053,7 +1054,11 @@ main .box-mitte-bericht .unten .einträge .eintrag .einzel .zeile1{
 main .box-mitte-bericht .unten .einträge .eintrag .einzel .zeile2{
     display: flex;
     justify-content: space-between;
-    font-size: 1vw;
+    font-size: 0.8vw;
+}
+main .box-mitte-bericht .unten .einträge .eintrag .einzel .zeile2 p{
+    font-size: 0.7vw;
+    width: 70%;
 }
 
 
@@ -1061,7 +1066,7 @@ main .box-mitte-bericht .unten .einträge .eintrag{
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
-    height: 6vw;
+    height: auto;
     
 }
 
@@ -1536,6 +1541,31 @@ aside .sidebar-pop .message-count{
     border: solid 2px var(--color-success);
 }
 
+.popup-content .pop-info .pop-button-save{
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 0.8vw;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 5px 20px;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 8px;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-top: 3vw;
+}
+.popup-content .pop-info .pop-button-save:hover {
+    transition : 613ms;
+    padding: 5px 20px;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
 .popup-content .pop-info .dropdown{
     min-width: 12vw;
     position: relative;
@@ -2402,7 +2432,397 @@ aside .sidebar-pop .message-count{
     border: solid 2px var(--color-success);
 }
 
+/***************ermittlung erstellen ***************************/
+.popup-ermittlung{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw; 
+    height: 22vw; 
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
 
+
+.pop-ermittlung .top-ticket {
+    display: grid;
+    gap: 0.1vw;
+    width: 85%;
+    height: 100px;
+    margin: 0 auto; 
+    margin-top: 1vw;
+}
+
+
+    
+
+
+.pop-ermittlung .top-ticket .input-feld{
+    
+    height: 1.3vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0.3vw; 
+    padding-left: 5px;
+
+}
+
+.pop-ermittlung .top-ticket .text-feld{
+    
+    height: 5vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0.5vw; 
+    padding-left: 5px;
+
+}
+
+.pop-ermittlung .top-ticket .text-feld::-webkit-scrollbar {
+    width: 0.2vw;
+}
+
+.pop-ermittlung .top-ticket .text-feld::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+
+
+.pop-ermittlung .top-ticket .text-feld::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+
+.pop-ermittlung .top-ticket .text-feld::-webkit-scrollbar-button:start,
+.pop-ermittlung .top-ticket .text-feld::-webkit-scrollbar-button:end {
+    display: block;
+    height: 0.1vw; 
+}
+
+.pop-ermittlung .top-ticket .selector{
+    
+    height: 2.1vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0px; 
+    appearance: none;
+    overflow-y: hidden;
+    margin-bottom: 0.5vw;
+}
+
+
+.pop-ermittlung .selector option:checked{
+    background: var(--color-primary) !important;
+    box-shadow: 0 0 10px 100px var(--color-primary) inset;
+}
+
+
+
+
+.pop-ermittlung .top-ticket button {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 0.2vw 1vw;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 0.5vw;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-top: 1.5vw;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+.pop-ermittlung .top-ticket button:hover {
+    transition : 613ms;
+    padding: 0.2vw 1vw;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
+/***************hinzufügen erstellen ***************************/
+.popup-hinzufügen{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw; 
+    height: 15vw; 
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+
+.pop-hinzufügen .top-ticket {
+    display: grid;
+    gap: 0.1vw;
+    width: 85%;
+    height: 100px;
+    margin: 0 auto; 
+    margin-top: 1vw;
+}
+
+
+    
+
+
+.pop-hinzufügen .top-ticket .input-feld{
+    
+    height: 1.3vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0.3vw; 
+    padding-left: 5px;
+
+}
+
+.pop-hinzufügen .top-ticket .text-feld{
+    
+    height: 5vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0.5vw; 
+    padding-left: 5px;
+
+}
+
+.pop-hinzufügen .top-ticket .text-feld::-webkit-scrollbar {
+    width: 0.2vw;
+}
+
+.pop-hinzufügen .top-ticket .text-feld::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+
+
+.pop-hinzufügen .top-ticket .text-feld::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+
+.pop-hinzufügen .top-ticket .text-feld::-webkit-scrollbar-button:start,
+.pop-hinzufügen .top-ticket .text-feld::-webkit-scrollbar-button:end {
+    display: block;
+    height: 0.1vw; 
+}
+
+.pop-hinzufügen .top-ticket .selector{
+    
+    height: 2.1vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0px; 
+    appearance: none;
+    overflow-y: hidden;
+    margin-bottom: 0.5vw;
+}
+
+
+.pop-hinzufügen .selector option:checked{
+    background: var(--color-primary) !important;
+    box-shadow: 0 0 10px 100px var(--color-primary) inset;
+}
+
+
+
+
+.pop-hinzufügen .top-ticket button {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 0.2vw 1vw;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 0.5vw;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-top: 1.5vw;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+.pop-hinzufügen .top-ticket button:hover {
+    transition : 613ms;
+    padding: 0.2vw 1vw;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
+
+/***************eintrag erstellen ***************************/
+.popup-eintrag{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw; 
+    height: 15vw; 
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+
+.pop-eintrag .top-ticket {
+    display: grid;
+    gap: 0.1vw;
+    width: 85%;
+    height: 100px;
+    margin: 0 auto; 
+    margin-top: 1vw;
+}
+
+
+    
+
+
+.pop-eintrag .top-ticket .input-feld{
+    
+    height: 1.3vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0.3vw; 
+    padding-left: 5px;
+
+}
+
+.pop-eintrag .top-ticket .text-feld{
+    
+    height: 5vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0.5vw; 
+    padding-left: 5px;
+
+}
+
+.pop-eintrag .top-ticket .text-feld::-webkit-scrollbar {
+    width: 0.2vw;
+}
+
+.pop-eintrag .top-ticket .text-feld::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+}
+
+
+.pop-eintrag .top-ticket .text-feld::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: var(--card-border-radius);
+}
+
+.pop-eintrag .top-ticket .text-feld::-webkit-scrollbar-button:start,
+.pop-eintrag .top-ticket .text-feld::-webkit-scrollbar-button:end {
+    display: block;
+    height: 0.1vw; 
+}
+
+.pop-eintrag .top-ticket .selector{
+    
+    height: 2.1vw;
+    background-color: var(--color-background);
+    border: solid var(--color-primary) 2px;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    font-size: 0.8vw;
+    color: var(--color-dark); 
+    margin-bottom: 0px; 
+    appearance: none;
+    overflow-y: hidden;
+    margin-bottom: 0.5vw;
+}
+
+
+.pop-eintrag .selector option:checked{
+    background: var(--color-primary) !important;
+    box-shadow: 0 0 10px 100px var(--color-primary) inset;
+}
+
+
+
+
+.pop-eintrag .top-ticket button {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 0.2vw 1vw;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 0.5vw;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-top: 1.5vw;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+
+.pop-eintrag .top-ticket button:hover {
+    transition : 613ms;
+    padding: 0.2vw 1vw;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
 /********************checkbox allgemein*****************/
 
 
@@ -2545,7 +2965,35 @@ aside .sidebar-pop .message-count{
     color: var(--color-danger);
 }
 
+.popup-content-bericht .erstellen{
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 0.2vw 1vw;
+    border: solid var(--color-primary) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 0.5vw;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-top: -2vw;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
 
+.popup-content-bericht .erstellen:hover {
+    transition : 613ms;
+    padding: 0.2vw 1vw;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
 
 .selector-container {
     width: 100%;
