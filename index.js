@@ -1527,12 +1527,12 @@ function fillpopup_action(){
                         <label for="c7-13">Checkbox</label>
                     </div>
                     <div class="checkbox-wrapper-13">
-                        <input id="c7-13" type="checkbox">
-                        <label for="c7-13">Checkbox</label>
+                        <input id="c8-13" type="checkbox">
+                        <label for="c8-13">Checkbox</label>
                     </div>
                     <div class="checkbox-wrapper-13">
-                        <input id="c7-13" type="checkbox">
-                        <label for="c7-13">Checkbox</label>
+                        <input id="c9-13" type="checkbox">
+                        <label for="c9-13">Checkbox</label>
                     </div>
                 </div>
                 
@@ -2941,7 +2941,7 @@ function fillcon2_bericht_info() {
                 <div class="links">
                     <div class="spieler">
                         <p>Miha Nowotny<p>
-                        <span class="material-icons-sharp">person</span>
+                        <span class="material-icons-sharp" onclick="button1('namen')">person</span>
                     </div>
                     <div class="spieler">
                         <p>Miha Nowotny<p>
@@ -2969,7 +2969,7 @@ function fillcon2_bericht_info() {
                 <div class="mitte">
                     <div class="autos">
                         <p>JKS834<p>
-                        <span class="material-icons-sharp">directions_car</span>
+                        <span class="material-icons-sharp" onclick="button1('kfz')">directions_car</span>
                     </div>
                     <div class="autos">
                         <p>JKS834<p>
