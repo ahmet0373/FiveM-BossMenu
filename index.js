@@ -309,12 +309,12 @@ var mitarbeiter = [
         "id" : "31"
     },
     {
-        "vorname" : "Miha",
+        "vorname" : "apple",
         "nachname" : "Nowotny",
         "dienstnummer" : "69",
         "rang" : "pd chief",
         "nummer" : "1929210",
-        "status" : "online",
+        "status" : "offline",
         "id" : "31"
     },
     {
@@ -323,7 +323,7 @@ var mitarbeiter = [
         "dienstnummer" : "69",
         "rang" : "pd chief",
         "nummer" : "1929210",
-        "status" : "online",
+        "status" : "offline",
         "id" : "31"
     },
     {
@@ -947,8 +947,8 @@ function modal_spieler(daten){
     $(document).mouseup(function(e) {
         var popup = $('.popup-content');
         if (!popup.is(e.target) && popup.has(e.target).length === 0) {
-            $('.popup').remove();
             blur.removeClass('blur');
+            $('.popup').remove();
         }
     });
     
@@ -1000,8 +1000,8 @@ function modal_autos(daten){
     $(document).mouseup(function(e) {
         var popup = $('.popup-content');
         if (!popup.is(e.target) && popup.has(e.target).length === 0) {
-            $('.popup').remove();
             blur.removeClass('blur');
+            $('.popup').remove();
         }
     });
     
@@ -1061,8 +1061,8 @@ function modal_tickets(daten){
     $(document).mouseup(function(e) {
         var popup = $('.popup-content');
         if (!popup.is(e.target) && popup.has(e.target).length === 0) {
-            $('.popup').remove();
             blur.removeClass('blur');
+            $('.popup').remove();
         }
     });
     
@@ -1119,8 +1119,9 @@ function modal_fahndung(daten){
     $(document).mouseup(function(e) {
         var popup = $('.popup-content');
         if (!popup.is(e.target) && popup.has(e.target).length === 0) {
-            $('.popup').remove();
             blur.removeClass('blur');
+            $('.popup').remove();
+            
         }
     });
     
@@ -1203,8 +1204,8 @@ function modal_bericht(daten){
     $(document).mouseup(function(e) {
         var popup = $('.popup-content-bericht');
         if (!popup.is(e.target) && popup.has(e.target).length === 0) {
-            $('.popup-bericht').remove();
             blur.removeClass('blur');
+            $('.popup-bericht').remove();
         }
     });
     
@@ -1257,8 +1258,8 @@ function modal_ermittlung(daten){
     $(document).mouseup(function(e) {
         var popup = $('.popup-ermittlung');
         if (!popup.is(e.target) && popup.has(e.target).length === 0) {
-            $('.popup-ermittlung').remove();
             blur.removeClass('blur');
+            $('.popup-ermittlung').remove();
         }
     });
     
@@ -1309,8 +1310,8 @@ function modal_hinzufügen(daten){
     
         
         if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+            blur.removeClass('blur');
             popup.remove(); 
-            blur.removeClass('blur'); 
         }
     });
     
@@ -1361,8 +1362,8 @@ function modal_eintrag(daten){
     
         
         if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+            blur.removeClass('blur');
             popup.remove(); 
-            blur.removeClass('blur'); 
         }
     });
     
@@ -1560,7 +1561,11 @@ function fillpopup_action(){
                     </ul>
                 </div>
             </div>
-            <button class="pop-button-save">Speichern</button>
+
+            <div class="button-unten">
+                <button class="pop-button-save">Speichern</button>
+                <button class="pop-button-kick">Mitarbieter Feuern</button>
+            </div>
             
         </div>
     `)
@@ -2394,7 +2399,7 @@ function fillcon2_left_mitarbeiter() {
     `)
 
     let toolbar = document.createElement('div');
-    toolbar.innerHTML = '<h2>Mitarbeiter Liste</h2>';
+    toolbar.innerHTML = '<div class="berichttitel"><h2>Mitarbeiter Liste</h2> <button class="pop-button">Mitarbeiter einstellen</button></div>';
 
     let TableMitarbeiter = $('#mitarbeiterTable').DataTable({
         pageLength: 12, 
@@ -2437,7 +2442,7 @@ function fillcon2_left_mitarbeiter() {
             },
             {
                 title: 'status',
-                targets: 5
+                targets: 5,
             },
             {
                 title: '',
@@ -2461,7 +2466,41 @@ function fillcon2_left_mitarbeiter() {
         
     })
 
-    TableMitarbeiter.draw();
+    TableMitarbeiter.on("draw", function() {
+        if (TableMitarbeiter.column(5).nodes()) {
+            TableMitarbeiter.column(5).nodes().each(function(cell, i) {
+                console.log("hurrensohn")
+                var taskid = $(cell).text().trim();
+                const svgTrue = `
+                    <svg onclick="nichts('${taskid}')" xmlns="http://www.w3.org/2000/svg" width="16" color="green" height="16" fill="currentColor" class="bi bi-person-fill-check" viewBox="0 0 16 16">
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                    </svg>
+                `;
+
+                const svgFalse = `
+                    <svg onclick="nichts('${taskid}')" xmlns="http://www.w3.org/2000/svg" width="16" color="red" height="16" fill="currentColor" class="bi bi-person-fill-dash" viewBox="0 0 16 16">
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                    </svg>
+                `;
+                
+                const item = mitarbeiter[i]
+                
+                if(taskid == "online"){
+                    $(cell).html(svgTrue)
+                    console.log("online")
+                } else if (taskid == "offline"){
+                    $(cell).html(svgFalse)
+                    console.log("offline")
+                }
+                
+            });    
+        }    
+        
+    })
+
+   TableMitarbeiter.draw();
 
 }
 

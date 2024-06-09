@@ -1540,6 +1540,10 @@ aside .sidebar-pop .message-count{
     color: var(--color-success);
     border: solid 2px var(--color-success);
 }
+.popup-content .pop-info .button-unten{
+    display: flex;
+    justify-content: space-between;
+}
 
 .popup-content .pop-info .pop-button-save{
     font-family: poppins, sans-serif;
@@ -1559,6 +1563,32 @@ aside .sidebar-pop .message-count{
     margin-top: 3vw;
 }
 .popup-content .pop-info .pop-button-save:hover {
+    transition : 613ms;
+    padding: 5px 20px;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
+
+.popup-content .pop-info .pop-button-kick{
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 0.8vw;
+    color: var(--color-danger);
+    background: transparent;
+    padding: 5px 20px;
+    border: solid var(--color-danger) 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 8px;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-top: 3vw;
+}
+.popup-content .pop-info .pop-button-kick:hover {
     transition : 613ms;
     padding: 5px 20px;
     transform : translateY(-0px);
