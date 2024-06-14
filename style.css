@@ -1540,6 +1540,40 @@ aside .sidebar-pop .message-count{
     color: var(--color-success);
     border: solid 2px var(--color-success);
 }
+.popup-content .pop-info .dienstnummer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-content .pop-info .dienstnummer h4{
+    margin-top: 1vw;
+}
+.popup-content .pop-info .pop-button-save-input{
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 0.8vw;
+    color: var(--color-primary);
+    background: transparent;
+    padding: 5px 5px;
+    border: solid var(--color-primary) 2px;
+    box-shadow: 0 0.5vw 1vw var(--color-light);
+    border-radius: 8px;
+    transition: 613ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    margin-top: 1vw;
+    width: 50%;
+}
+.popup-content .pop-info .pop-button-save-input:hover {
+    transition : 613ms;
+    padding: 5px 5px;
+    transform : translateY(-0px);
+    background: transparent;
+    color: var(--color-success);
+    border: solid 2px var(--color-success);
+}
 .popup-content .pop-info .button-unten{
     display: flex;
     justify-content: space-between;
@@ -1560,7 +1594,7 @@ aside .sidebar-pop .message-count{
     cursor: pointer;
     text-transform: uppercase; 
     text-decoration: none;
-    margin-top: 3vw;
+    margin-top: 2.5vw;
 }
 .popup-content .pop-info .pop-button-save:hover {
     transition : 613ms;
@@ -1586,7 +1620,7 @@ aside .sidebar-pop .message-count{
     cursor: pointer;
     text-transform: uppercase; 
     text-decoration: none;
-    margin-top: 3vw;
+    margin-top: 2.5vw;
 }
 .popup-content .pop-info .pop-button-kick:hover {
     transition : 613ms;
@@ -1597,9 +1631,10 @@ aside .sidebar-pop .message-count{
     border: solid 2px var(--color-success);
 }
 .popup-content .pop-info .dropdown{
-    min-width: 12vw;
+    
+    max-width: 50%;
     position: relative;
-    margin: auto;
+    margin-top: 1vw;
     
 }
 
@@ -1615,8 +1650,8 @@ aside .sidebar-pop .message-count{
     align-items: center;
     border: 2px var(--color-primary) solid;
     border-radius: var(--border-radius-1);
-    box-shadow: 0 1vw 1.5vw var(--color-light);
-    padding: 0.5vw;
+    box-shadow: 0 0.5vw 1vw var(--color-light);
+    padding: 0.4vw;
     cursor: pointer;
     transition: background 0.3s;
 }

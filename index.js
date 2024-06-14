@@ -1541,7 +1541,7 @@ function fillpopup_action(){
                 
           
             </div>
-            <h3>Ränge</h3>
+            <h3>Ränge / Dienstnummer</h3>
             <div class="pop-mod">
                 <div class="dropdown">
                     <div class="select">
@@ -1560,8 +1560,9 @@ function fillpopup_action(){
                         <li>Rang 8</li>
                     </ul>
                 </div>
+                <input class="pop-button-save-input" placeholder="Dienstnummer 43..."></input>
             </div>
-
+           
             <div class="button-unten">
                 <button class="pop-button-save">Speichern</button>
                 <button class="pop-button-kick">Mitarbieter Feuern</button>
