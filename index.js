@@ -1560,7 +1560,7 @@ function fillpopup_action(){
                         <li>Rang 8</li>
                     </ul>
                 </div>
-                <input class="pop-button-save-input" placeholder="Dienstnummer 43..."></input>
+                <input type="number" class="pop-button-save-input" placeholder="Dienstnummer 43..."></input>
             </div>
            
             <div class="button-unten">
