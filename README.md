@@ -1,2 +1,2 @@
-# FiveM-AdminMenu
+# FiveM-BossMenu
 ![alt text](image.png)
